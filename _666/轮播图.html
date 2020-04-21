@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.lunbo{
+				width: 300px;
+				height: 170px;
+				margin: 20px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.pic ul{
+				list-style: none;
+			}
+			.pic li{
+				display: none;
+			}
+			.pic li.current{
+				display: block;
+			}
+			.btns span{
+				width: 30px;
+				height: 20px;
+				background-color: rgba(255,255,100,0.3);
+				position: absolute;
+				top: 75px;
+				cursor: pointer;  
+			}
+			.leftBtn{
+				left: 5px;
+				background: url(img/left.png) no-repeat center center;
+			}
+			.rightBtn{
+				right: 5px;
+				background: url(img/right.png) no-repeat center center;
+			}
+			img{
+				width: 300px;
+				height: 170px;
+			}
+			.circles{
+				width: 140px;
+				height: 20px;
+				position: absolute;
+				left: 75px;
+				bottom: 0px;
+			}
+			.circles ol{
+				list-style: none;
+			}
+			.circles ol li{
+				float: left;
+				width: 8px;
+				height: 8px;
+				margin-left: 16px;
+				border-radius: 50%;
+				background-color:gray;
+				cursor: pointer;
+				font-size: 5px;
+				line-height: 8px;
+				text-align: center;
+			}
+			.circles .current{
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="lunbo">
+			<div id="pic" class="pic">
+				<ul>
+					<li class="current"><a href=""><img src="img/l1.jpg"/></a></li>
+					<li><a href=""><img src="img/l2.jpg"/></a></li>
+					<li><a href=""><img src="img/l3.jpg"/></a></li>
+					<li><a href=""><img src="img/l6.jpg"/></a></li>
+					<li><a href=""><img src="img/l4.jpg"/></a></li>
+				</ul>
+			</div>
+			<div class="btns">
+				<span id="btnLeft" class="leftBtn"></span>
+				<span id="btnRight" class="rightBtn"></span>
+			</div>
+			<div class="circles" id="circles">
+				<ol>
+					<li class="current">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ol>
+			</div>
+		</div>
+		<script type="text/javascript">
+			window.onload=function(){
+				var img=document.getElementById("pic").getElementsByTagName('li');
+				var circlesList=document.getElementById('circles').getElementsByTagName('li');
+				var leftBtn=document.getElementById('btnLeft');
+				var rightBtn=document.getElementById('btnRight');
+				var img_index=0;
+				//左按钮监听事件
+				leftBtn.onclick=function(){
+					img_index--;
+					if(img_index<0){
+						img_index=4;
+					}
+					changeImg();
+				}
+				//右按钮监听事件
+				rightBtn.onclick=function(){
+					img_index++;
+					if(img_index>4){
+						img_index=0;
+					}
+					changeImg();
+				}
+				//小圆点监听事件
+				for(var i=0;i<circlesList.length;i++){
+					(function(m){
+						circlesList[m].onmouseover=function(){
+							img_index=m;
+							changeImg();
+						}
+						clearInterval(timer);
+					})(i)
+				}
+				function changeImg(){
+					for(var i=0;i<img.length;i++){
+						img[i].className="";						
+					}
+					img[img_index].className="current";
+					for(var i=0;i<circlesList.length;i++){
+						circlesList[i].className="";
+					}
+					circlesList[img_index].className="current";
+					
+					 
+ 				}
+				function timer(){
+					img_index++;
+					if(img_index>4){
+						img_index=0;
+					}
+					changeImg();
+				}
+				
+				setInterval(timer,2000)
+			}
+		</script>
+	</body>
+</html>

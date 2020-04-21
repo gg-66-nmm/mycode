@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: greenyellow;
+				position: absolute;
+				left: 30px;
+				top: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<script type="text/javascript">
+			window.onload=function(){
+				var box=document.getElementsByTagName('div')[0]; 
+				var nowLeft=30;
+				//总长780	时间3000毫秒     时间间隔20   150次     步长5
+				/*var timer=setInterval(function(){
+					nowLeft+=5;
+					if(nowLeft>780){
+						nowLeft=780;
+						clearInterval(timer);
+					}
+					box.style.left=nowLeft+"px";
+				},20)*/
+				var target=1000; 	//总长
+				var time=10000;		//总时长
+				var interval=20;	//时间间隔
+				//总帧数
+				var maxFrame=time/interval;	
+				//步长
+				var step=(target-nowLeft)/maxFrame;
+				var framNumber=0;
+				var timer=setInterval(function(){
+					nowLeft+=step;
+					framNumber++;
+					if(framNumber==maxFrame){
+						clearInterval(timer);
+					}
+					box.style.left=nowLeft+"px";
+				},interval);
+			}
+		</script>
+	</body>
+</html>

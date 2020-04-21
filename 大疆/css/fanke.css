@@ -1,0 +1,59 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.bigNav{
+	width: 1200px;
+	height: 44px;
+	margin:auto;
+}
+.bigNav::before{
+	content: '';
+	width: 184px;
+	height: 44px;
+	float: left;
+	background: url(../img/fanke.png) no-repeat ;
+}
+ul{	
+	line-height: 30px;	
+	list-style: none;
+}
+ul li{
+	width: 100px;
+	height: 21px;
+	/*line-height: 30px;*/
+	border-right: 1px solid #ccc;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+ul li a{
+	text-decoration: none;
+	color: #727171;
+	font-size: 14px;
+	font-weight: 600;
+}
+ul li a:hover{
+	color: brown;
+}
+.nav{
+	/*margin-top: 10px;*/
+	display: none;
+	overflow: hidden;
+}
+ul li:hover{
+	color: brown;
+	/*border-bottom: 5px solid brown;*/
+}
+ul li:hover .nav{
+	display: block;
+	border-top: 5px solid brown;	
+}
+.nav p{
+	line-height: 30px;
+	color: #727171;
+	background-color: lavenderblush;
+}
+.nav p:hover{
+	color: brown;
+}

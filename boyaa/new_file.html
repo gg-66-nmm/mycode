@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+			function aa(){
+			var num=parseInt(Math.random()*100+1);
+			//console.log(num);
+			var max=100;
+			var min=1;
+			while(true){
+				var a=parseInt(prompt("输入你的"+min+"到"+max+"之间的幸运数："));
+				
+				if(a>=min&&a<=max){
+					if(a==num){
+						alert("恭喜你，中奖了");
+						break;
+					}
+					else if(a>num){
+						max=a;
+					}
+					else if(a<num){
+						min=a;
+					}
+				}else{
+					alert("输入错误");
+					}				
+				}
+			}
+			//aa();
+			function a(aa){
+				var count=0;
+				for(var i=1;i<=aa;i++){
+					if(aa%i==0){
+						count++;//1 2
+					}
+				}
+				return count;
+			}
+			function b(bb){
+				if(a(bb)==2){
+					return true;
+				}
+				else {
+					return false;
+				}
+			}
+//			console.log(b(13));
+			for(var i=2;i<100;i++){
+				if(b(i)){
+					console.log(i);
+				}
+				
+			}
+		</script>
+	</body>
+</html>

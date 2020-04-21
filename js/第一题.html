@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*1.*/
+			var a=parseInt(prompt("1.请输入一个数"));
+			if(a%5==0&&a%6==0){
+				alert(a+"同时能被5和6整除");
+			}
+			if(a%5==0&&a%6!=0){
+				alert(a+"能被5整除但不能被6整除");
+			}
+			if(a%6==0&&a%5!=0){
+				alert(a+"能被6整除但不能被5整除");
+			}
+			if(a%5!=0&&a%6!=0){
+				alert(a+"既不能能被5整除又不能被6整除");
+			}
+			
+			/*2.*/
+			var b1=parseInt(prompt("2.请输入第一个数"));
+			var b2=parseInt(prompt("2.请输入第二个数"));
+			if(b1%2==0&&b2%2==0||b1%2!=0&&b2%2!=0){
+				alert(b1+","+b2+"这两个数奇偶性相同");
+			}
+			else{
+				alert(b1+","+b2+"这两个数奇偶性不同");
+			}
+		</script>
+		<!--/*3.*/-->
+		<h2>3.用户输入一个年份，判断这个年是否是闰年。</h2>
+		输入一个年份：<input type="text" id="year"  /><br/>
+		<button onclick="btn()">计算</button>
+		<div id="nianfen"></div>
+		<script type="text/javascript">
+			
+			function btn(){
+				var year=document.getElementById("year").value;
+				var cn;
+				if(year%400==0||year%4==0&&year%100!=0){
+					cn="是闰年";
+				}else{
+					cn="不是闰年";
+				}
+				document.getElementById("nianfen").innerHTML=year+"年"+cn;
+			}
+			
+		</script>
+		<h2>4.年终奖</h2>
+		输入工作年份：<input type="text" id="year1"  /><br/>
+		输入月薪：<input type="text" id="money"  /><br/>
+		<button onclick="tt()">计算</button>
+		<div id="nzj"></div>
+		<!--4.-->
+		<script type="text/javascript">
+			
+			function tt(){
+				var n=document.getElementById("year1").value;
+				var money=document.getElementById("money").value;
+				var nzj;
+				if(n==0&&money<8000){
+					nzj=money;
+				}
+				else if(n==0&&money>8000){
+					nzj=1.2*money;
+				}
+				else if(n==1&&money<10000){
+					nzj=1.5*money;
+				}
+				else if(n==1&&money>10000){
+					nzj=1.7*money;
+				}
+				else if(n>2&&money<12000){
+					nzj=3*money;
+				}
+				else if(n>2&&money>12000){
+					nzj=3.2*money;
+				}
+				
+				document.getElementById("nzj").innerHTML="年终奖为："+nzj;
+			}
+		</script>
+		<!--5.-->
+		<script type="text/javascript">
+			for(var a=1;a<1000;a++){
+				if(a%5==0||a%6==0){
+					console.log(a);
+				}
+			}
+		</script>
+		<!--6.-->
+		<h2>6.输入一个数字n，计算1+2+3+4+……n的和。</h2>
+		<input type="text" name="num" id="num" value="" />
+		<button onclick="sum()">计算</button>
+		<div id="sum"></div>
+		<script type="text/javascript">
+			function sum(){
+				var num=document.getElementById("num").value;
+				var sum=0;
+				for(var i=1;i<=num;i++){
+					sum+=i;
+				}
+				document.getElementById("sum").innerHTML=sum;
+			}
+			
+		</script>
+		
+		<!--7.-->
+		<script type="text/javascript">
+			var m=parseInt(prompt("7.输入一个数"));
+			var he=0;
+			for(var i=2;i<=m;i++){
+				he+=(i+1)/i;
+			}
+			alert(he);
+		</script>
+		
+		<!--8.-->
+		<script type="text/javascript">
+			var l=parseInt(prompt("8.输入一个数"));
+			for(var i=1;i<=l;i++){
+				
+				if(l%i==0){
+						console.log(i);
+					}
+			}
+		</script>
+		
+		
+		<!--9.-->
+		<script type="text/javascript">
+			document.write("<h1>9.请在控制台输出1~60之间的所有“安全数”。</h1>");
+			for(var i=1;i<=60;i++){
+				if(i%7!=0&&i%10!=7)
+				{
+					document.write(i+"\n");
+				}
+			}
+		</script>
+		
+		
+		<!--10.-->
+		<script type="text/javascript">
+			document.write("<h1>10.100~999之内，只有4个水仙花数，请编程找出来。</h1>");
+			for(var i=100;i<1000;i++){
+				var a=parseInt(i/100);
+				var b=parseInt(i/10%10);
+				var c=parseInt(i%10);
+				var s=Math.pow(a,3)+Math.pow(b,3)+Math.pow(c,3);
+				if(i==s){
+					document.write(i+"是水仙花数<br/>");
+				}
+			}
+		</script>
+		
+		<!--11.-->
+		<script type="text/javascript">
+			var a=parseInt(prompt("11.输入一个数"));
+			var count=0;
+			for(var i=2;i<a;i++){
+				if(a%i==0){
+					count++;
+				}
+				
+			}
+			if(count==0){
+				alert(a+"是质数");
+			}
+			else{
+				alert(a+"不是质数");
+			}
+		</script>
+		
+		<!--12-->
+		<script type="text/javascript">
+			document.write("<h1>12.列出1~10000的所有质数。</h1>");
+			for(var i=2;i<10000;i++){
+				var count=0;
+				for(var j=1;j<=i;j++){
+					if(i%j==0){
+						count++;
+					}
+				}
+				if(count==2){
+					document.write(i+"\n");
+				}
+				
+			}
+		</script>
+		
+		<!--10-->
+		
+	</body>
+</html>

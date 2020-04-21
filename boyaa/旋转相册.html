@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/run.css"/>
+	<body>
+		<div class="box" id="box">
+			<div class="list">
+				<img src="img/lunbo_files/byamaj.jpg"/>
+				<img src="img/lunbo_files/byqpai2.jpg"/>
+				<img src="img/lunbo_files/gamepic10.jpg"/>
+				<img src="img/lunbo_files/gamepic2.jpg"/>
+				<img src="img/lunbo_files/gamepic6.jpg"/>
+				<img src="img/lunbo_files/gamepic9.jpg"/>
+				<img src="img/lunbo_files/cdmjcf.png"/>
+				<img src="img/lunbo_files/ddz_gys.jpg"/>
+				<img src="img/lunbo_files/cdmjgyshg.png"/>
+				<img src="img/lunbo_files/xq_gys.jpg"/>	
+			</div>
+		</div>
+		<script type="text/javascript">
+			var dom=document.getElementById("box");
+			var list=document.getElementsByClassName("list")[0];
+			var imgs=document.getElementsByTagName("img"); 
+			var len=imgs.length;
+			var deg=Math.floor(360/len);
+			var s=10;
+			//var deg=60;
+			function init(){
+				for(var i=0;i<len;i++){
+					imgs[i].style='transform:rotateY('+deg*i+'deg) translateZ(500px) ';
+					//imgs[i].style='z-index:'+i;
+					//console.log(deg);
+				}
+//				list.style='transform:rotateY(90deg) rotateX(-7deg) translateZ(150px)';
+			}
+			init();
+		</script>
+	</body>
+</html>

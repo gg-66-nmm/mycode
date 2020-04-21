@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj={
+				a:45,
+				b:56,
+				c:00
+			}
+			Object.prototype.f=12;
+			obj._proto_={
+				e:"njn"
+			}
+			console.log("a" in obj)//true
+			console.log("d" in obj)//false
+			console.log("e" in obj)//false
+			console.log("f" in obj)//true
+		</script>
+	</body>
+</html>

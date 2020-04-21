@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人简历</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				width: 1000px;
+				margin: auto;	
+			}
+			.jianli{
+				width: 800px;
+				border: 1px solid #a2a2a2;
+				color: red;
+				font-size: 16px;
+				/*text-align: center;*/
+				/*margin: 20px auto;*/
+				background: url("img/bls.png") ;
+				background-size: 100% 100%;
+			}
+			h1{
+				text-align: center;
+				font-weight: 300;
+			}
+			input{
+				width: 280px;
+				height: 35px;
+				background-color: palegoldenrod;
+				font-size: 16px;
+				border-radius: 5px;
+				border: 1px solid #ccc;
+				outline: none;
+			}
+			p{
+				margin-top: 8px;
+			}
+			label:first-child{
+				display: inline-block;
+				width: 80px;
+				text-align: end;
+				margin-left: 190px;
+			}
+			#boy,#girl{
+				width: 35px;
+				height: 15px;
+			}
+			[name="hobby"]{
+				width: 18px;
+				height: 18px;
+				margin-top: 5px;
+			}
+			
+			.btn input{
+				width: 160px;
+				height: 35px;
+				/*outline: none;*/
+				background-color: palegreen;
+				font-size: 18px;
+				color: #fff;
+				margin-left: 160px;
+				margin-bottom: 10px;
+				cursor: pointer;
+			}
+			textarea{
+				border-radius: 5px;
+				background-color: palegoldenrod;
+				/*font-size: 16px;*/
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		var arr1=["兰州","武威","白银","天水"];
+		var arr2=["西安","宝鸡","渭南","咸阳"];
+		var arr3=["西宁","玉树","格尔木","海东"];
+		var arr4=["成都","攀枝花","雅安","西昌"];
+		var arr5=["安阳","新乡","许昌","商丘"];
+		var arr6=["长春","吉林","四平","延吉"];
+		var arr7=["苏州","昆山","无锡","南京"];
+		var arr8=["南昌","九江","庐山","吉安"];		
+		function province(){
+			var sf=document.getElementById("sf").value;
+//			var sf=province.value;
+			var city=document.getElementById("cs");
+			city.options.length=0;
+			if(sf=="甘肃省"){
+//				city.options.length=0;
+				for (var i=0;i<arr1.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr1[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else 
+			if(sf=="陕西省"){
+//				city.options.length=0;
+				for (var i=0;i<arr2.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr2[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else
+			if(sf=="青海省"){
+//				city.options.length=0;
+				for (var i=0;i<arr3.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr3[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else
+			if(sf=="四川省"){
+//				city.options.length=0;
+				for (var i=0;i<arr4.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr4[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else 
+			if(sf=="河南省"){
+//				city.options.length=0;
+				for (var i=0;i<arr5.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr5[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else 
+			if(sf=="吉林省"){
+//				city.options.length=0;
+				for (var i=0;i<arr6.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr6[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else
+			if(sf=="江苏省"){
+//				city.options.length=0;
+				for (var i=0;i<arr7.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr7[i]+"</option>";
+					city.appendChild(option);
+				}
+			}else
+			if(sf=="江西省"){
+//				city.options.length=0;
+				for (var i=0;i<arr8.length;i++) {
+					var option=document.createElement("option");
+					option.innerHTML="<option>"+arr8[i]+"</option>";
+					city.appendChild(option);
+				}
+			}
+		}
+	</script>
+	<body>
+		<div class="jianli">
+			<h1>个人简历</h1>
+			<form action="">
+				<p>
+					<label for="">姓名：</label>
+					<input type="text" name="username" id="username" value="" maxlength="5"/>
+				</p>
+				<p>
+					<label for="">性别：</label>
+					<input type="radio" name="sex" checked id="boy" value="男" /><label for="boy">男</label>
+					<input type="radio" name="sex" id="girl" value="女" /><label for="girl">女</label>
+				</p>
+				<p>
+					<label for="">年龄：</label>
+					<input type="number" name="age" max="100" min="18" placeholder="年龄为18-100"/>
+				</p>
+				<p>
+					<label for="">毕业学校：</label>
+					<input type="text" name="scool"  />
+				</p>
+				<p>
+					<label for="">专业：</label>
+					<input type="text" name="zy" />
+				</p>
+				<p>
+					<label for="">联系电话：</label>
+					<input type="tel" name="tel"  />
+				</p>
+				<p>
+					<label for="">邮箱：</label>
+					<input type="email" name="email" />
+				</p>
+				<p>
+					<label for="">个人爱好：</label>
+					<input type="checkbox" name="hobby" id="sport" value="运动" /><label for="sport">运动</label>
+					<input type="checkbox" name="hobby" id="sing" value="唱歌" /><label for="sing">唱歌</label>
+					<input type="checkbox" name="hobby" id="dance" value="跳舞" /><label for="dance">跳舞</label>
+					<input type="checkbox" name="hobby" id="game" value="打游戏" /><label for="game">打游戏</label>
+				</p>
+				<p>
+					<label for="">籍贯：</label>
+					<select name="proivnce" id="sf" onclick="province()" >
+						<option value="">--选择您的省份--</option>
+						<option value="甘肃省">甘肃省</option>
+						<option value="陕西省">陕西省</option>
+						<option value="青海省">青海省</option>
+						<option value="四川省">四川省</option>
+						<option value="河南省">河南省</option>
+						<option value="吉林省">吉林省</option>
+						<option value="江苏省">江苏省</option>
+						<option value="江西省">江西省</option>
+					</select>
+					<select name="city" id="cs">
+						<option value="">--选择您的城市--</option>
+					</select>
+				</p>
+				<p>
+					<label>自我评价：</label>
+					<textarea name="" rows="5" cols="42" style="resize: none;"></textarea>
+				</p>
+				<p class="btn">
+					<input type="submit" name="tj" id="tj" value="提交" />
+					<input type="reset" name="cz" id="cz" value="重置" />
+				</p>
+			</form>
+		</div>
+	</body>
+</html>

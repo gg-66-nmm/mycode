@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#box{
+				width: 1000px;
+				height: 500px;
+				border: 1px solid #666;
+				position: relative;
+				margin: 50px auto;
+			}
+			#block{
+				width: 16%;
+				height: 3%;
+				position: absolute;
+				top: 85%;
+				left: 42%;
+				background-color: red;
+			}
+			p{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				position: absolute;
+				left: 50%;
+				top: 5%;
+				background-color: greenyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="block" class="block">
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			var box=document.getElementById("box");
+			var block=document.getElementById("block");
+			function Ball(left,top){
+				this.d=30;
+				this.left=left || Math.random()*(box.clientWidth-this.d);
+				this.top=top || Math.random()*(box.clientHeight-this.d);
+				this.deltaX=parseInt(Math.random()*2)-2;
+				this.deltaY=parseInt(Math.random()*2)-2;
+				this.init();
+				this.move();
+			}
+			Ball.prototype.init=function(){
+				this.dom=document.createElement("p");
+				box.appendChild(this.dom);
+			}
+			Ball.prototype.render=function(){
+				this.dom.style.left=this.left+"px";
+				this.dom.style.top=this.top+"px";
+			}
+			Ball.prototype.move=function(){
+				var self=this;
+				var timer=setInterval(function(){
+					self.left+=self.deltaX;
+					self.top+=self.deltaY;
+					if(
+						(self.left>=box.clientWidth-self.d )
+						||
+						(self.left<=0)
+					){
+						self.deltaX=-self.deltaX;
+					}
+					if(
+						(self.top>=box.clientHeight-self.d)
+						||
+						(self.top<=0)
+					){
+						self.deltaY=-self.deltaY;
+					}
+					self.render();
+				},5)
+			}
+			new Ball();
+		</script>
+	</body>
+</html>

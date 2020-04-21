@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>复选框的全选</title>
+	</head>
+	<body>
+		<div id="box">
+			<p><input type="checkbox"/>吃饭</p>
+			<p><input type="checkbox"/>睡觉</p>
+			<p><input type="checkbox"/>想宝宝</p>
+			<p><input type="checkbox"/>打豆豆</p>
+			<p><input type="checkbox"/>运动</p>
+		</div>
+			<input type="button" id="btn" value="全选" />
+		<script type="text/javascript">
+			window.onload=function(){
+				var inputs=document.getElementById('box').getElementsByTagName("input");
+				var state=0;
+				var btn=document.getElementById("btn");
+				btn.onclick=function(){
+					state=state==0?1:0;
+					var str=state==0?'':'checked';
+					this.value=state=="0"?"全选":"全不选";
+					console.log(str);
+					for(var i=0;i<inputs.length;i++){
+						inputs[i].checked=str;
+					}
+				}
+			}
+			
+		</script>
+	</body>
+</html>
+

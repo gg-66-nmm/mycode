@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>电子钟</title>
+	</head>
+	<body>
+		<div id="clock"></div>
+		<script type="text/javascript">
+			window.onload=function(){
+				var clock=document.getElementById("clock");
+				function formatTime(m){
+					return(m>10?"":"0")+m;
+				}
+				function Time(){
+					var date=new Date();
+					clock.innerHTML="现在是"+formatTime(date.getHours())+":"+formatTime(date.getMinutes())+":"+formatTime(date.getSeconds());
+				}
+				setInterval(Time,1000);
+			}
+		</script>
+	</body>
+</html>

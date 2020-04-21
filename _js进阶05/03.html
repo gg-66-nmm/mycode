@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var obj={
+				a:45,
+				b:56,
+				c:00
+			}
+			obj._proto_={
+				e:"njn"
+			}
+			console.log(obj.hasOwnProperty("a"))//true
+			console.log(obj.hasOwnProperty("e"))//false
+			for(var k in obj){
+				obj.hasOwnProperty(k) && console.log(k);
+			}
+
+		</script>
+	</body>
+</html>

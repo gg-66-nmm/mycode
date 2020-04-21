@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>当前时间</title>
+	</head>
+	<style type="text/css">
+		body{background-color: #000;}
+		p{color: #ffccff;}
+	</style>
+	<script type="text/javascript">
+		function times(){
+			var date=new Date();
+			var hour=date.getHours();
+			var min=date.getMinutes();
+			var second=date.getSeconds();
+			if(hour<10){
+				document.getElementById("hour1").src="img/0.gif";
+				document.getElementById("hour2").src="img/"+hour+".gif";
+			}
+			else if(hour<20){
+				document.getElementById("hour1").src="img/1.gif";
+				document.getElementById("hour2").src="img/"+(hour-10)+".gif";
+			}
+			else if(hour<24){
+				document.getElementById("hour1").src="img/2.gif";
+				document.getElementById("hour2").src="img/"+(hour-20)+".gif";
+			}
+			if(min<10){
+				document.getElementById("min1").src="img/0.gif";
+				document.getElementById("min2").src="img/"+min+".gif";
+			}
+			else if(min<20){
+				document.getElementById("min1").src="img/1.gif";
+				document.getElementById("min2").src="img/"+(min-10)+".gif";
+			}
+			else if(min<30){
+				document.getElementById("min1").src="img/2.gif";
+				document.getElementById("min2").src="img/"+(min-20)+".gif";
+			}
+			else if(min<40){
+				document.getElementById("min1").src="img/3.gif";
+				document.getElementById("min2").src="img/"+(min-30)+".gif";
+			}
+			else if(min<50){
+				document.getElementById("min1").src="img/4.gif";
+				document.getElementById("min2").src="img/"+(min-40)+".gif";
+			}
+			else if(min<60){
+				document.getElementById("min1").src="img/5.gif";
+				document.getElementById("min2").src="img/"+(min-50)+".gif";
+			}
+			if(second<10){
+				document.getElementById("second1").src="img/0.gif";
+				document.getElementById("second2").src="img/"+second+".gif";
+			}
+			else if(second<20){
+				document.getElementById("second1").src="img/1.gif";
+				document.getElementById("second2").src="img/"+(second-10)+".gif";
+			}
+			else if(second<30){
+				document.getElementById("second1").src="img/2.gif";
+				document.getElementById("second2").src="img/"+(second-20)+".gif";
+			}
+			else if(second<40){
+				document.getElementById("second1").src="img/3.gif";
+				document.getElementById("second2").src="img/"+(second-30)+".gif";
+			}
+			else if(second<50){
+				document.getElementById("second1").src="img/4.gif";
+				document.getElementById("second2").src="img/"+(second-40)+".gif";
+			}
+			else if(second<60){
+				document.getElementById("second1").src="img/5.gif";
+				document.getElementById("second2").src="img/"+(second-50)+".gif";
+			}
+			setTimeout("times()",1000);
+		}
+	</script>
+	<body onload="times();">
+		<p>当前时间：</p>
+		<img src="img/0.gif" id="hour1"/>
+		<img src="img/0.gif" id="hour2"/>
+		<img src="img/colon.gif"/>
+		<img src="img/0.gif" id="min1"/>
+		<img src="img/0.gif" id="min2"/>
+		<img src="img/colon.gif"/>
+		<img src="img/0.gif" id="second1"/>
+		<img src="img/0.gif" id="second2"/>
+	</body>
+</html>

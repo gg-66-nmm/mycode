@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.login{
+				width: 350px;
+				margin: 20px auto;	
+			}
+			.user,.psw{
+				width: 220px;
+				height: 30px;
+				margin-top: 15px;
+				padding-left: 5px;				
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+			.user::before{
+				content: '';
+				background:url(img/person1.png) repeat scroll top left;
+				display: inline-block;				
+				background-size: 100%;
+				width: 20px;
+				margin-top: 5px;
+				height: 20px;
+				float: left;
+			}
+			.psw::before{
+				content: '';
+				background:url(img/psw1.png) repeat scroll top left;
+				display: inline-block;				
+				background-size: 100%;
+				width: 20px;
+				margin-top: 5px;
+				height: 20px;
+				float: left;
+			}
+			.user input,.psw input{
+				height: 20px;
+				margin-top: 5px;
+				border: none;
+				text-indent: .5em;
+				float: left;
+				outline: none;
+			}
+			#sub{
+				margin-top: 5px;				
+				outline: none;
+				width: 220px;
+				height: 30px;
+				margin-top: 15px;				
+				border-radius: 5px;
+				border: none;
+				color: #fff;
+				background-color: lightpink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="login">
+			<div class="user">
+				<input type="text" name="user" id="user" value="" placeholder="QQ/邮箱/手机号码"/>
+			</div>
+			<div class="psw">
+				<input type="password" name="psw" id="psw" value="" placeholder="密码" />
+			</div>
+			<input type="submit" name="submit" id="sub" value="登录" />
+		</div>
+		
+	</body>
+</html>

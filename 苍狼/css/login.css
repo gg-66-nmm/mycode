@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html{
+	overflow-x: hidden;
+}
+.vip_top {
+	height: 160px;
+	
+}
+.vip_top img{
+	width: 200px;
+	margin-left: 150px;
+}
+.bg{
+	width: 1800px;
+	height: 540px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -900px;
+	background: url(../img/bj.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.bg img{
+	width: 400px;
+	margin-left: 500px;
+}
+
+.vip_content {
+	height: 500px;
+	position: relative;
+}
+
+.vip_foot {
+	font-size: 12px;
+	text-align: center;
+	color: #a2a2a2;
+}
+
+.user,
+.psw {
+	width: 280px;
+	height: 35px;
+	line-height: 34.6px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.user::before {
+	content: '';
+	background: url(../img/person1.png);
+	display: inline-block;
+	background-size: 100%;
+	width: 30px;
+	height: 30px;
+	float: left;
+}
+
+.psw::before {
+	content: '';
+	background: url(../img/psw1.png);
+	display: inline-block;
+	background-size: 100%;
+	width: 25px;
+	height: 25px;
+	margin-top: 3px;
+	float: left;
+}
+
+.user input,
+.psw input {
+	width: 220px;
+	height: 30px;
+	font-size: 14px;
+	border: none;
+	text-indent: .5em;
+	float: left;
+	outline: none;
+}
+
+#sub {
+	display: block;
+	margin-top: 40px;
+	margin-left: 20px;
+	outline: none;
+	width: 280px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	background-color: #f10180;
+}
+#sub:hover{
+	text-decoration: none;
+}
+
+form {
+	width: 320px;
+	background-color: #FFFFFF;
+	float: right;
+	margin-right: 100px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+ul li {
+	width: 159px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	list-style: none;
+	margin-top: 15px;
+	float: left;
+}
+
+ul li:nth-child(2) {
+	color: #f10180;
+	border-left: 1px solid #ccc;
+}
+
+ul {
+	height: 50px;
+	width: 320px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+
+ol,
+fieldset {
+	width: 280px;
+	margin: 10px auto;
+}
+ol{
+	margin-bottom: 35px;
+}
+
+ol li {
+	height: 8px;
+	/*text-align: center;*/
+	line-height: 8px;
+	list-style: none;
+	float: left;
+	font-size: 11px;
+}
+
+#forget li:nth-child(2) {
+	float: right;
+}
+
+fieldset {
+	border: none;
+	border-top: 1px solid red;
+}
+
+legend img {
+	margin:8px;
+}
+
+#login li {
+	padding: 0 7px;
+}
+
+li,
+#sub,
+legend img {
+	cursor: pointer;
+}
+
+li:hover,li a:hover {
+	color: #f10180;
+}
+
+#login li:nth-child(1),
+#login li:nth-child(2) {
+	border-right: 1px solid #ccc;
+}
+
+#login li:nth-child(1){
+	color: #a2a2a2;
+}
+
+#login li:nth-child(4) {
+	color: #a2a2a2;
+	margin-left: 18px;
+}
+
+#login li:nth-child(1):hover,
+#login li:nth-child(4):hover{
+	color: #808080;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	font-size: 12px;
+}
+
+.tel input,.psw1 input{
+	height: 30px;
+	margin-top: 2px;
+	font-size: 14px;
+	border: none;
+	text-indent: 0.5em;
+	float: left;
+	outline: none;
+}
+.tel,.psw1{
+	height: 35px;
+	margin-top: 20px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+
+.psw1,.tel{
+	width: 280px;
+}
+.yanzhengma{
+	width: 280px;
+	margin-left: 20px;
+	overflow: hidden;
+}
+.ma{
+	height: 35px;
+	margin-top: 20px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 180px;
+	float: left;
+	line-height: 34.6px;
+}
+.ma::before{
+	content: '';
+	background: url(../img/66.png) no-repeat -589px -157px;
+	display: inline-block;
+	width: 28px;
+	margin-top: 5px;
+	height: 30px;
+	float: left;
+}
+.psw1 input,.tel input{
+	width: 220px;
+}
+#btn{
+	float: right;
+	margin-top: 24px;
+	margin-right: 5px;
+	border-radius: 5px;
+	outline: none;
+	padding: 2px 8px;
+}
+.ma input{
+	width: 130px;
+	height: 30px;
+	border: none;
+	outline: none;
+	
+}
+.ver{
+	overflow: hidden;
+}
+.terms{
+	width: 280px;
+	margin: 10px auto;
+	font-size: 12px;
+}
+#zhuce li{
+	color: #000;
+	font-weight: 500;
+}
+#zhuce li:nth-child(2){
+	font-size: 12px;
+	border: none;
+}
+li a{
+	color: #f10180;
+}
+.tel::before{
+	content: '';
+	background: url(../img/66.png) no-repeat -564px -159px;
+	display: inline-block;
+	width: 28px;
+	margin-top: 5px;
+	height: 30px;
+	float: left;
+}
+
+.psw1::before{
+	content: '';
+	background: url(../img/66.png) no-repeat -540px -160px;
+	display: inline-block;
+	width: 28px;
+	margin-top: 5px;
+	height: 30px;
+	float: left;
+}

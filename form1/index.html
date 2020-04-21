@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>表单练习</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			legend {
+				text-align: center;
+			}
+			
+			form {
+				width: 500px;
+				margin: auto;
+				text-align: center;
+			}
+			p{
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		function btn(){
+			var color=document.getElementById("color").value;
+			//alert(color);
+			document.getElementById("psw").style.backgroundColor=color;
+		}
+	</script>
+	<body onload="init()">
+		<form>
+			<fieldset>
+				<legend>输入型表单</legend>
+				<p><label>用户名：</label>
+					<input type="text" name="bgc" id="" value="" />
+				</p>
+				<p><label>密码：</label>
+					<input type="password" name="bgc" id="psw" value="" /></p>
+				<p><label>日期：</label>
+					<input type="datetime" name="bgc" id="" value="" /></p>
+				<p><label>邮箱：</label>
+					<input type="email" name="bgc" id="" value="" /></p>
+				<p>
+					<label>电话：</label>
+					<input type="tel" name="bgc" id="" value="" />
+				</p>
+				<p>
+					<label>IP:</label>
+					<input type="url" name="bgc" id="" value="" />
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>选择型控件</legend>
+				<p>
+					<label for="">性别：</label>
+					<input type="radio" name="sex" id="man" value="" /><label for="man">男</label>
+					<input type="radio" name="sex" id="wma" value="" /><label for="wma">女</label>
+				</p>
+				<p>
+					<label>兴趣爱好：</label>
+					<input type="checkbox" name="bask" id="bask" value="篮球" /><label for="bask">篮球</label>
+					<input type="checkbox" name="pin" id="pin" value="篮球" /><label for="pin">乒乓球</label>
+					<input type="checkbox" name="ball" id="ball" value="排球" /><label for="ball">排球</label>
+					<input type="checkbox" name="yu" id="yu" value="羽毛球" /><label for="yu">羽毛球</label>
+				</p>
+				<p>
+					<label for="">日期：</label>
+					<input type="date" name="bgc" id="" value="" />
+					<input type="datetime-local" name="bgc" id="" value="" />
+				</p>
+				<p>
+					<label for="">选择你喜欢的颜色：</label>
+					<input type="color" name="bgc" id="color" value="" />
+				</p>
+				<p>
+					<label for="">选择文件：</label>
+					<input type="file" name="bgc" id="" value="" />
+				</p>
+				<p>
+					<label for="">选择图片：</label>
+					<input type="image" name="bgc" id="" value="" src="img/l6.jpg"width="300" height="180"/>
+				</p>
+				<p>
+					<label for="">音量：</label>
+					<input type="range" name="bgc" id="" value="" />
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>按钮型控件</legend>
+				<p>
+					<input type="button" onclick="btn()" name="bgc" id="" value="确定" />
+					<input type="submit" value="提交"/>
+					<input type="reset" name="" id="" value="重置" />
+				</p>
+				
+			</fieldset>
+		</form>
+	</body>
+
+</html>

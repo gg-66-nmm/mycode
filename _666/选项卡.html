@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 700px;
+				height: 300px;
+				border: 1px solid #000;
+				margin: 100px auto;
+				text-align: center;
+			}
+			.box ul{
+				
+				list-style: none;
+				overflow: hidden;
+			}
+			.box ul li{
+				float: left;
+				margin-left: 1px;
+				width: 99px;
+				line-height: 30px;
+				font-size: 22px;
+				color: #fff;
+				background-color: yellowgreen;
+			}
+			.box ul li.selected{
+				background-color: red;
+			}
+			ol li{
+				list-style: none;
+				display: none;
+				padding:70px 100px;
+				height: 130px;
+				background-color: red;
+				color: #fff;
+				font-size: 16px;
+			}
+			.olist{
+				display: block;
+			}
+		</style>
+	</head>
+	<div class="box">
+		<ul>
+			<li class="selected">星期一</li>
+			<li>星期二</li>
+			<li>星期三</li>
+			<li>星期四</li>
+			<li>星期五</li>
+			<li>星期六</li>
+			<li>星期日</li>
+		</ul>
+		<ol>
+			<li class="olist">这年头，低调才是最大的炫耀。低调可以让人安全。晒幸福容易惹来嫉妒，也容易适得其反。万一有天有个变化，那自己难有台阶下。正如“快乐和痛苦是邻居，快乐如果太大声，会吵着痛苦，而痛苦太大声，却吵不着快乐，因为痛苦是聋子。”同样，如果幸福晒得太早，也容易吵着不幸。</li>
+			<li>在这个世界，有些人会时不时的告诉你，你不够出色。有些时候或许他们是正确的，但是不要做他们让你从事的工作，试图去找一些其他的工作，试图去问一些圈外的人，追求自己的目标，当他们对你说 “不”的时候，不要太往心里去，可能他们自己都没有说“是”的资格。</li>
+			<li>欲望，是天下最不可思议、最难取舍的东西：你不想占有，你囊中空空，但你身轻如燕，自由自在，不受羁绊;你占有了，感官的享受挤压着身心，使你负重前行，你变得患得患失，你还得时时为得到的欢愉付出代价。其实，多余的东西最后都不是你的，就像猴子进了玉米地，出来还是和刚进去时一样，就两只玉米。</li>
+			<li>有时需要走弯路，是不想为难自己;有时需要走直路，是为了强大自己。或直或弯，都是为了善待自己!</li>
+			<li>有时候，对自己克制一点，少发一点脾气;对别人宽容一点，退一步海阔天空。身边的世界往往比我们想象的要睿智与宽容。</li>
+			<li>一个人面对外面的世界，需要的是窗子;一个人面对自我时，需要的是镜子。通过窗子能看见世界的明亮，使用镜子能看见自己的污点。 其实，窗子或镜子并不重要，重要的是你的心。你的心明亮，世界就明亮;你的心如窗，就看见了世界;你的心如镜，就观照了自我。</li>
+			<li>生命中终将会错过一些人，我们应该感谢那些错过的人，他们让我们明白了幸福的珍贵。不要相信该是自己的终该是自己的，不去争取不去把握的话，永远都不会有机会。缘分是什么，缘分就是给了你一次遇到的机会，幸福全靠去争取。</li>
+		</ol>
+		<div class="content"></div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+		$(".box ul li").click(function(){
+			$(this).addClass("selected");
+			$(this).siblings().removeClass("selected");
+			$(".box ol li").eq($(this).index()).addClass("olist");
+			$(".box ol li").eq($(this).index()).siblings().removeClass("olist");
+		})
+	</script>
+	<body>
+	</body>
+</html>

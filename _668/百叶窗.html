@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 1000px;
+				height: 300px;
+				border: 1px solid #ccc;
+				position: relative;
+				overflow: hidden;
+				margin: 100px auto;
+			}
+			img{
+				width: 500px;
+				height: 300px;
+			}
+			ul{
+				list-style: none;
+			}
+			ul li{
+				position: absolute;
+				top: 0;
+			}
+			.no0{left: 0px;}
+			.no1{left: 200px;}
+			.no2{left: 400px;}
+			.no3{left: 600px;}
+			.no4{left: 800px;}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li class="no0"><a href="#"><img src="img/1.jpg" /></a></li>
+				<li class="no1"><a href="#"><img src="img/2.jpg" /></a></li>
+				<li class="no2"><a href="#"><img src="img/3.jpg" /></a></li>
+				<li class="no3"><a href="#"><img src="img/4.jpg" /></a></li>
+				<li class="no4"><a href="#"><img src="img/5.jpg" /></a></li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			$(".no0").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":500},1500);
+				$(".no2").animate({"left":625},1500);
+				$(".no3").animate({"left":750},1500);
+				$(".no4").animate({"left":875},1500);
+			})
+			$(".no1").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":125},1500);
+				$(".no2").animate({"left":625},1500);
+				$(".no3").animate({"left":750},1500);
+				$(".no4").animate({"left":875},1500);
+			})
+			$(".no2").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":125},1500);
+				$(".no2").animate({"left":250},1500);
+				$(".no3").animate({"left":750},1500);
+				$(".no4").animate({"left":875},1500);
+			})
+			$(".no3").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":125},1500);
+				$(".no2").animate({"left":250},1500);
+				$(".no3").animate({"left":375},1500);
+				$(".no4").animate({"left":875},1500);
+			})
+			$(".no4").mouseenter(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":125},1500);
+				$(".no2").animate({"left":250},1500);
+				$(".no3").animate({"left":375},1500);
+				$(".no4").animate({"left":500},1500);
+			})
+			$(".box").mouseleave(function(){
+				$("li").stop(true);
+				$(".no1").animate({"left":200},1500);
+				$(".no2").animate({"left":400},1500);
+				$(".no3").animate({"left":600},1500);
+				$(".no4").animate({"left":800},1500);
+			})
+		</script>
+	</body>
+</html>

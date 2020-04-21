@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="bootstrap-3.3.7-dist/js/jquery-1.12.3.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="lis row"></div>
+		<script type="text/javascript">
+			//var item=location.search.substr(1).split("=")[1];
+			var arr=["男装","女装","内衣","电器","居家","母婴","文体","家纺","箱包","美食","数码","美妆","鞋子","配饰"];
+			for(var i=0;i<arr.length;i++){
+				var list=arr[i];
+				$.ajax({
+					type: "get",
+					url: "http://127.0.0.1/w/website/findGoodsList",
+					async: true,
+					data:{
+						"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+						"info":list,
+						"pageNo":1
+					},
+					success: function(res) {
+						
+						var obj =res.data.tbk_dg_material_optional_response.result_list.map_data;
+						console.log(res)
+							for(var j = 0; j < obj.length; j++) {
+								$(".lis").append(
+									`<div class="col-sm-3 col-xs-6">
+										<div class="item">
+											<a href="index.html?item_id=${obj[i].item_id}">
+												<img src="${obj[j].pict_url}"/>
+												<p>${obj[j].title}</p>
+												<span class="price">￥${obj[j].zk_final_price}</span>
+												<span class="del">￥${obj[j].reserve_price}</span>
+												
+											</a>
+										</div>
+										
+									</div>`
+								)
+							}
+					}
+				})
+			}
+			//console.log(item);
+			
+			/*$(function(){
+				$.ajax({
+					type:"get",
+					//url:"http://127.0.0.1/w/website/findGoodsDetail?info=577243735616",
+					url:"http://127.0.0.1/w/website/findGoodsDetail",
+					data:{
+						"info":item
+					},
+					async:true,
+					success:function(res){
+						console.log(res);
+						/*for(var i=0;i<sj.length;i++){
+							$(".lis").append(
+								`<div class="item">
+									<a href="xiangqing.html?name=${sj[i].name}">
+										<p>${sj[i].name}</p>
+										<img src="${sj[i].icon}" class="img-responsive"/>
+									</a>
+								</div>`
+							)
+						}
+					},
+					error:function(res){
+						console.log(res)
+					}
+				});
+			})*/
+		</script>
+	</body>
+</html>

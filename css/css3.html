@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			[type^="t"]{
+				width: 300px;
+				height: 50px;
+				background-color: #ffcc00;
+			}
+			[title="去哪儿"]{
+				display: block;
+				width: 200px;
+				font-size:50px;
+				background-color: yellow;
+			}
+			[rele~='ax']{
+				font-size: 35px;
+				color: red;
+			}
+			[type$="on"]{
+				width: 180px;
+				height: 80px;
+				background-color: green;
+			}
+			.box{
+				width: 300px;
+				height: 160px;
+				perspective: 500px;
+				-webkit-perspective: 500px;
+				position: relative;
+			}
+			.box img{
+				width: 300px;
+				height: 160px;
+				position: absolute;
+				left: 0;
+				top: 0;
+				transition: all 3s;
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+			}
+			.box .f1{
+				transform: rotateY(-180deg);
+			}
+			.box .f2{
+				transform: rotateY(0deg);
+			}
+			.box:hover .f1{
+				transform: rotateY(0deg);
+			}
+			.box:hover .f2{
+				transform: rotateY(180deg);
+			}
+			.translate{
+				width: 500px;
+				height: 300px;
+				animation: jump 3s infinite linear;
+			}
+			.translate img{
+				width: 500px;
+				height: 300px;
+				
+			}
+			@keyframes jump{
+				0%,10%{
+					transform: translate(0px,0px);
+				}
+				15%,25%{
+					transform: translate(200px,200px);
+				}
+				/*15%,25%{
+					transform: translate(100px,150px);
+				}*/
+				30%,40%{
+					transform: translate(400px,200px);
+				}
+				45%,55%{
+					transform: translate(600px,100px);
+				}
+				60%,70%{
+					transform: translate(800px,0px);
+				}
+				75%,80%{
+					transform: translate(500px,150px);
+				}
+				80%,90%{
+					transform: translate(1200px,0px);
+				}
+				90%,0%{
+					transform: translate(0px,0px);
+				}
+				
+			}
+			.skew{
+				width: 150px;
+				height: 150px;
+			}
+			.skew img{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text"  />
+		<a href="#" title="去哪儿">qukk</a>
+		<label for="" rele="momo ax">想上天</label>
+		<input type="button" name="" id="" value="" />
+		<div class="box">
+			<img src="img/gf1.png" class="f1"/>
+			<img src="img/gf2.jpg" class="f2"/>
+		</div>
+		<div class="translate">
+			<img src="img/l1.jpg"/>
+		</div>
+		<div class="skew">
+			<img src="images/11.png"/>
+		</div>
+	</body>
+</html>

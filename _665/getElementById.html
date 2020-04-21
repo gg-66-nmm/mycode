@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>getElementById</title>
+		<style type="text/css">
+			#box{
+				background-color: yellowgreen;
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<input type="text" id="haha" value="" />
+		<script type="text/javascript">
+			function bianse(){
+				var oBox=document.getElementById('box');
+				var oInput=document.getElementById('haha');
+				oBox.style.backgroundColor="red";
+				oInput.style.backgroundColor="red";
+			}
+			setInterval(bianse,3000);
+			alert(document.title);
+			alert(document.URL);
+		</script>
+	</body>
+</html>

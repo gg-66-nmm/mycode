@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*1.*/
+			var a=(123+45*78)/(34+543)-9*(324-34);
+			console.log(a);
+			
+			/*2.1*/
+			var b=parseFloat(prompt("输入摄氏温度"));
+			var bb=9/5*b+32;
+			alert("对应的华氏温度为："+bb);
+			
+			/*2.2*/
+			function btn(){
+				var c=document.getElementById("cc").value;
+				var f=9/5*c+32;
+				document.getElementById("ff").innerHTML=f;
+			}
+			
+			/*3.*/
+			var c=Math.pow(5,7);
+			var cc=(23+c)/45;
+			var ccc=Math.pow(cc,2);
+			alert(ccc);
+			
+			/*4.*/
+			var d=prompt("输入六边形的边长：");
+			var dd=3*Math.sqrt(3)/2*Math.pow(d,2);
+			alert("六边形的面积："+dd);
+			
+			/*5.*/
+			var day;
+			var g=prompt("输入n，计算n天以后是星期几");
+			var ggg=(2+g%7)%7;
+			switch(ggg){
+				case 0:day="星期天";break;
+				case 1:day="星期一";break;
+				case 2:day="星期二";break;
+				case 3:day="星期三";break;
+				case 4:day="星期四";break;
+				case 5:day="星期五";break;
+				case 6:day="星期六";break;
+			}
+			alert("今天是星期二，"+g+"天以后是"+day);
+			
+			
+			/*6.*/
+			var h=prompt("输入一个三位数");
+			var gw=parseInt(h%10);
+			var sw=parseInt(h/10%10);
+			var bw=parseInt(h/100);
+			var n=gw+sw+bw;
+			alert(n);
+		</script>
+		<label for="">输入摄氏度：</label><input type="text" name="cc" id="cc" value="" />
+		<button onclick="btn()" >提交</button>
+		<div id="ff"></div>
+		
+	</body>
+</html>

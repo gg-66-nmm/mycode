@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				height:10000px;
+			}
+			.back{
+				width: 80px;
+				height: 50px;
+				display: none;
+				position: fixed;
+				bottom: 30px;
+				right: 15px;
+				background-color: #CCC;
+				text-align: center;
+				line-height: 50px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="back" id="btn">
+			回到顶部
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8">
+			
+		</script>
+		<script type="text/javascript">
+			var back=document.getElementById("btn");
+			
+			window.onscroll=function(){
+				var jd=document.body.scrollTop||document.documentElement.scrollTop;
+				if(jd>500){
+					btn.style.display="block";
+				}else{
+					btn.style.display="none";
+				}
+			}
+			btn.onclick=function(){
+				$(document.body).animate({'scrollTop':0},500)
+			}
+		</script>
+	</body>
+</html>

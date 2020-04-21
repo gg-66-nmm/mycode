@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #e6e6e6;
+}
+.box{
+	width: 100%;
+	/*height: 100%;*/
+	/*position: relative;*/
+}
+
+.login {
+	/*width: 1000px;*/
+	width: 100%;
+	/*height: 100%;*/
+	display: flex;
+	justify-content: center;
+	/*position: absolute;
+	top: 15%;*/
+	position: relative;
+	margin-top: 5%;
+}
+
+.login_left {
+	position: relative;
+	width: 400px;
+	height: 520px;
+	/*margin: 20px auto;*/
+	overflow: hidden;
+}
+/*.login::before{
+	content: '';
+	background: url(../img/logo.png) no-repeat top left;
+	width: 100%;
+	height: 90px;
+	
+	position:absolute;
+}*/
+
+
+#list {
+	width: calc(400px * 5);
+	/*width: 3500px;*/
+	height: 520px;
+	position: absolute;
+}
+
+#list img {
+	width: 400px;
+	height: 520px;
+	float: left;
+}
+
+
+.child a {
+	text-decoration: none;
+	color: blue;
+	font-size: 12px;
+	
+}
+ label,p{
+	text-align: center;
+	margin-top: 15px;
+	font-size: 11px;
+	color: #999;
+}
+#check1{
+	margin-top: 15px;
+}
+
+.login_right{
+	width: 400px;
+	height: 520px;
+	background-color: #fff;
+}
+.child{
+	width: 225px;
+	height: 360px;
+	margin: 110px auto;
+}
+.zc_child{
+	margin-top: 100px;
+}
+.zhuce{
+	margin-bottom: 30px;
+}
+.user,
+.psw {
+	width: 220px;
+	height: 40px;
+	margin-top: 15px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.user input,
+.psw input {
+	height: 30px;
+	margin-top: 5px;
+	border: none;
+	text-indent: .5em;
+	float: left;
+	outline: none;
+	width: 100%;
+}
+
+#sub,.wechat {
+	margin-top: 5px;
+	outline: none;
+	width: 220px;
+	height: 40px;
+	margin-top: 15px;
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	background-color: green;
+}
+h2{
+	font-weight: 300;
+	text-align: center;
+}

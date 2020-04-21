@@ -1,0 +1,133 @@
+.big_pic{
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}
+.bigImage{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	top: 10px;
+	left: 483px;
+	border: 1px solid #ccc;
+	display: none;
+	overflow: hidden;
+	z-index: 33;
+}
+.bigImage img{
+	position: absolute;
+}
+.mask{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	margin-top: 31px;
+	margin-left: 36px;
+	display: none;
+	background-color: rgba(128,255,255,0.3);
+}
+.acd{
+	position: relative;
+}
+.big_pic img{
+	width: 100%;
+}
+.goods_left ul{
+	margin: 10px;
+	width: 100%;
+}
+.goods_left ul li{
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+.goods_left ul li img{
+	width: 80px;
+	height: 80px;
+}
+.goods_left ul li span{
+	margin-top: 16px;
+}
+.goods_right{
+	border-right: 1px solid #ccc;
+	padding-top: 30px;
+}
+.goods_title{
+	width: 80%;
+	height: 60px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.goods_price{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 14px;
+	color: #999;
+	background-color:#e0e0e0;
+}
+.goods_price span{
+	font-size: 31px;
+	color: red;
+	font-weight: 700;
+	margin-left: 50px;
+}
+span.dell{
+	text-decoration: line-through;
+	color: #999;
+	font-size: 14px;
+	margin: 0;
+}
+.information,.quantity{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	color: #999;	
+}
+.information span:first-child{
+	color: #000;
+	margin-left:30px ;
+}
+.quantity{
+	display: flex;
+}
+.num input{
+	width: 30px;
+	height: 28px;
+	border: none;
+	outline: none;
+}
+.num{
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 30px;
+	margin-top: 10px;
+	background-color: #ccc;
+	border: 1px solid #999;
+}
+.num span{
+	padding:0 5px;
+}
+.gocar{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 21px;
+	font-weight: 700;
+	color: #000;
+	border-radius: 10px;
+	text-align: center;
+	margin: 50px;
+	background-color: rgb(120,255,255);
+}
+.gocar:hover{
+	cursor: pointer;
+	color: #D7237E;
+}
+.box_border{
+	border: 3px solid #ccc;
+}

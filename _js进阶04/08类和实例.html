@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function People(name,age,sex){
+				this.name=name;
+				this.age=age;
+				this.sex=sex;
+				this.sayhello=function(){
+					alert("你好，我是"+this.name)
+				}
+			}
+			function Dog(name,pinizhong,age,sex){
+				this.name=name;
+				this.pinizhong=pinizhong;
+				this.age=age;
+				this.sex=sex;
+				this.wang=function(){
+					alert("旺旺"+this.name)
+				}
+			}
+			var xiaoming=new People("小明",18,"男");
+			//var xiaomeng=new People("小萌",18,"女");
+			xiaoming.sayhello();
+			var huahua=new Dog("花花","斑点狗",1,"雌")
+			//var erha=new Dog("二哈","哈士奇",1,"雄")
+			huahua.wang();
+		</script>
+		
+	</body>
+</html>

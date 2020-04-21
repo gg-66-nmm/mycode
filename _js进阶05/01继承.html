@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function People(name,age,sex){
+				this.name=name;
+				this.age=age;
+				this.sex=sex;
+			}
+			People.prototype.sayhello=function(){
+				alert("你好，我是"+this.name);
+			}
+			People.prototype.chifan=function(){
+				alert("妈妈咪呀");
+			}
+			function Student(name,age,sex,xuehao,xiaohonghua){
+				this.constructor.apply(this,arguments);
+				this.xuehao=xuehao;
+				this.xiaohonghua=xiaohonghua;
+			}
+			Student.prototype=People.prototype;
+			Student.prototype.study=function(){
+				alert("nfjen")
+			}
+			var xiaoming=new Student("小明",18,"男",12,5);
+			console.log(xiaoming);
+			xiaoming.sayhello();
+			xiaoming.chifan();
+		</script>
+	</body>
+</html>

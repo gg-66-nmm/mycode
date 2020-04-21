@@ -1,0 +1,518 @@
+.c_green{color:#38b774;}
+header.phone,nav.phone{display:none;}
+.pr{position:relative;}
+.pa{position:absolute;}
+/*新闻分页*/
+
+.pages{height:70px;line-height:70px;display:block;text-align:center;}
+.pages a {color:#444866;font-size:12px;text-decoration:none;vertical-align: middle; display: inline-block; min-width: 22px; height: 22px; background: #fff; border: 1px solid #c3cbe3; -moz-border-radius: 3px; border-radius: 3px; text-align: center; line-height: 22px; margin-left: 6px; }
+.pages a:hover,.pages a.on {     background: #8894bb; color: #fff; border: 0; width: 24px; height: 24px; line-height: 24px; }
+.pages a.prev,.pages a.next { width: 24px; height: 24px; background: url(../pic/pages.png) 9px 8px no-repeat; text-indent: -999px; overflow: hidden; border: 0; }
+.pages a.next { background-position: 9px -18px; }
+
+.news_table td{border:1px solid #999;text-align:center;font-size:14px;font-weight:bold;height:40px;}
+.news_table table{width:100%;}
+
+/*foot*/
+.foot{background:#191c3c;padding-top:2%;padding-bottom:2%;}
+.foot p{text-align:center;color:#abafd0;line-height:25px;}
+.foot .p1 a{font-size:1.333em;line-height:35px;color:#abafd0}
+.foot .p1 .on{color:#2dc271;}
+.foot .p2{font-size:12px;padding:auto 0;}
+/*header*/
+.top{background:#191d3a;width:97%;padding:3% 1.5%;}
+.top .brand{width:70%;vertical-align:middle;}
+.top .list{width:70%;vertical-align:middle;text-align:center;margin-top:1.5rem;}
+
+/*nav*/
+.game_nav{width:100%;height:4.1rem;background:#fff;}
+.game_nav ul{width:100%;}
+.game_nav ul li{width:25%;text-align:center;font-size:1.6rem;float:left;height:4.1rem;line-height:4.1rem;
+border-bottom:1px solid #dddee1;}
+.game_nav ul li.on{width:25%;text-align:center;font-size:1.6rem;float:left;height:4.1rem;line-height:4.1rem;
+border-bottom:1px solid #dddee1;color:#38b774;}
+
+/*首页*/
+.nav_list,footer.phone{display:none;}
+footer .area{display:block;}
+.us_phone,.contact_phone{background:#111530;padding:10px 0;}
+.us_phone li,.contact_phone li{background:#252947;font-size:1.166em;color:#fff;display:inline-block;height:50px;margin-left:2%;
+	line-height:50px;padding:0 3%;margin-bottom:10px;}
+.us_phone li a,.contact_phone li a{display:block;color:#fff;}
+.us_phone li a:hover, .contact_phone li a:hover{color:#fff;}
+.indexnews .mtitle{background:none;border:none;}
+.mtitle .name{display:none;}
+.index_more{display:none;}
+.time{float:right;}
+.person_m{display:none;}
+/*加入我们*/
+.box_1>a{background:#50cc8a;}
+.box_2>a{background:#fcb44b;}
+.box_3>a{background:#6ac9ff;}
+.box_1>div{background:#33b972;}
+.box_2>div{background:#f2a536;}
+.box_3>div{background:#46b6f6;}
+a.hlink{line-height:80px;}
+/*.box_1 .title,.box_2 .title,.box_3 .title,.box_2 .title02{display:inline-block;background:url(../img_phone/zp.png) no-repeat;
+	width:234px;height:67px;vertical-align:middle;background:50% auto;}
+.box_1 .title{background-position:20px 20px;}
+.box_2 .title{background-position:20px -112px;}
+.box_2 .title02{background-position:20px -247px;}
+.box_3 .title{background-position:20px -394px;}*/
+.box_1 .title,.box_2 .title,.box_3 .title,.box_2 .title02,.box_2 .title3{display:inline-block;vertical-align:middle;width:226px;height:80px;}
+.box_1 .title{display:inline-block;background:url(../img_phone/zp1.png) no-repeat 20px 20px;-moz-background-size:80%;background-size:80%;}
+.box_2 .title{display:inline-block;background:url(../img_phone/zp4.png) no-repeat 20px 20px;-moz-background-size:55%;background-size:55%;}
+.box_2 .title3{display:inline-block;background:url(../img_phone/zp5.png) no-repeat 20px 20px;-moz-background-size:55%;background-size:55%;}
+.box_2 .title02{display:inline-block;background:url(../img_phone/zp2.png) no-repeat 20px 20px;-moz-background-size:80%;background-size:80%;}
+.box_3 .title{display:inline-block;background:url(../img_phone/zp3.png) no-repeat 20px 20px;-moz-background-size:70%;background-size:70%;}
+.more_m{display:none;}
+/*人在博雅*/
+.ph1 img{width:630px;height:630px;}
+.ph2 img{width:710px;height:571px;}
+.ph3 img{width:425px;height:375px;}
+.ph4 img{width:560px;height:345px;}
+.ph5 img{width:500px;height:210px;}
+.ph6 img{width:460px;height:410px;}
+.ph7 img{width:700px;height:525px;}
+.ph8 img{width:710px;height:290px;}
+.ph9 img{width:709px;height:753px;}
+.ph10 img{width:672px;height:515px;}
+/*博雅游戏*/
+.gamelist li .gamelink .ewmlink i.do_load{display:inline-block;background:url(../img_phone/arrow.png) no-repeat 0 -268px;width:62px;height:60px;
+cursor:pointer;vertical-align:middle;position:static;font-style:normal;color:#37B673;font-size:1.333em;line-height:60px;padding-left:5px;padding-top:0;
+}
+.ewmlink .phone{display:none;}
+.gamepic img{width:331px;height:195px;}
+/*游戏详情*/
+.gameintro img{width:1000px;height:auto;}
+
+
+/*免责声明*/
+.area_nav{font-size: 1.366em;margin-top: 30px;}
+.area_nav span{margin:0 5px;}
+.announce{margin:0 0 30px 0;padding:20px 0;}
+.announce h2{font-size:20px;text-align:center;margin:20px 0;font-weight:bold;}
+.announce p{text-indent:30px;font-size:1.166em;line-height:30px;margin-bottom:20px;}
+#jiandu .announce h2{color:black}
+#jiandu .announce p{text-indent:40px;font-size:1.3em;line-height:30px;margin-bottom:20px;}
+ /*关于loading底部*/
+    .ui-loader-default{ display:none}
+	.ui-mobile-viewport{ border:none;}
+	.ui-page {padding: 0; margin: 0; outline: 0} 
+/*banner*/
+.gbanner1{background-image:url(../pic/probanner1.jpg?v1);}
+#b22 a{height:460px;display:block;}
+#b22{background-image: url(../pic/banner160223.jpg);height:460px}
+#b1{background-image: url(../pic/bannerdz01.png?v3);height:460px;}
+#b4{background-image: url(../pic/probanner4.jpg);height:460px}
+#b2{background-image: url(../pic/probanner2.jpg);height:460px}
+
+/*去滑动效果*/
+/*.pleft .swiper-container{display:none;}
+.pleft .nav_pc{display:block;}*/
+.swiper-container{overflow:hidden;height:460px;}
+.swiper-wrapper{width:auto;height:auto}
+.swiper-slide{width:auto;}
+/*游戏详情*/
+#banner .bd li,#banner .bd li .intro,#banner1 .bd li,#banner1 .bd li .intro{display:block;}
+ .bd .g_phone{display:none;}
+.hide{display:none;}
+.gotop{display:block;}
+#banner .bd .game li{height:460px;padding-bottom:0;}
+/*新闻详情*/
+.artbox .n_pic{text-align:center;font-size:1.166em;line-height:2.4;}
+.artbox strong{font-size:1.166em;line-height:2.4;}
+
+/*简历提交页面*/
+.hdinfo{font-size:1.166em;}
+.hdinfo li div:nth-of-type(1){width:200px;text-align:right;padding-right:60px;}
+.boyaa_video,.bpt,.bpt2016_4,.bpt2016_3,.bpt2016,.bpt2016_1,.xq_gys,.ddz_gys,.bygy{display:block;}
+.ga_phone1{display:none;}
+.artbox p[align=center]{text-indent:30px;}
+@media screen and (min-width: 1025px){.artbox .middle .news_cent img:nth-child(1){margin:10px 40px 0 60px;}}
+@media screen and (max-width:1024px)
+{
+.swiper-container{height:auto;}
+.gamelist li .gamelink .ewmlink i.do_load{padding-top:0;}
+	#banner #b1 .title_c,#banner1 #b1 .title_c{display: none; }
+
+.changeLang{width: 19%; float:right;}
+.changeLang span{padding-left:0;}
+.changeLang span a{color: #444866;}  
+.artbox p[align=center]{text-indent:0;}
+.pages{display:none;}
+.notice{display: none;}
+.notice_phone .notice{display: block;position: fixed;bottom: 50px;left: 0;width: 100px;height: 80px;background:url(../pic/notice_phone.png);}
+.boyaa_video,.bpt,.bpt2016_4,.bpt2016_3,.bpt2016,.bpt2016_1{display:none;}
+  /*简历提交页面*/
+  .hdinfo li div:nth-of-type(1){width:100%;text-align:left;padding:0;}	
+  .hdinfo li div{width:100%;}
+  .hdinfo li div{font-size:14px;line-height:30px;/*height:30px;*/}	
+  .hdinfo li div input,.hdinfo li div select{font-size:14px;padding:3px 5px;
+	/*line-height:30px;height:30px;*/border:1px solid #cad6e1;}
+	.hdinfo li div input[type=file]{border:none;}
+.hdinfo li div label,.hdinfo li div label input{height:auto;}	
+
+	/*2016.4.14补充*/
+    .bd .g_phone{display:block;position:absolute;top:40%;left:53%;width:auto;padding:0 2% 0 0;}
+    .bd .g_phone p{font-size:0.8em;color:#fff;line-height:1.5}
+    .hrtabc{padding-top:20px;}
+
+    /*2016.5.3首页banner加文字*/
+    .bd .mindex{display:block;position:absolute;top:25%;left:53%;width:auto;}
+	.bd .mindex p{padding:7% 0;}
+
+	
+	/*重写游戏列表*/
+	header.phone,nav.phone{display:block;}
+	header.pc,section.gamebanner,.location,section.gleft,footer .area{display:none;}
+	section.area,.gamelist li .gamelink{width:100%;}
+	.combox{padding-bottom:5%;}
+	section.gright{float:none;width:100%;padding-top:20px;}
+	.gamelistcon,.gamelist{width:100%;}
+	.gamelist li>h3{display:none;}
+	.appstore .com,.ewmlink .com,.gamelist li .gamelink .ewmlink .com a,.gamelist li .gamelink .android .com{display:none;}
+	.gamelist li h3.phone{line-height:60px;height:60px;padding-top:0;}
+	.gamelist li .gamelink .appstore{width:52%;}
+	.gamelist li .gamelink .ewmlink{width:47%;}
+	.ewmlink .phone{display:block;}
+	.ewmlink .phone a{display:block;}
+	.gamelist li .gamepic{margin:0;}
+	.gamelist li {width:44%;height:auto;margin-left:3%;margin-right:3%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:30px;}
+	.gamelist li .gamepic{width:100%;height:auto;}
+	.gamepic img{width:100%;height:auto;}
+	.gamelist li .gamelink .appstore,.gamelist li .gamelink .android,.gamelist li .gamelink ,.gamelist li .gamelink .ewmlink {height:60px;}
+	.gamelist li .gamelink .ewmlink i{height:45px;}
+	/*游戏详情*/
+	.promain{margin-top:0;}
+	.location{display:none;}
+	.gameintro img{max-width:100%;text-align:center;}
+	/*免责声明*/
+	.announce{padding:20px;margin:0 0 30px 0;}
+	.announce h2{margin: 0 0 20px 0;}
+
+
+	/*首页*/
+	.area{width:auto;}
+	#top{height:auto;position:relative;background:#191d3a;}
+	.logo{width:40%;}
+	.logo a{margin:0 0 0 20px;background:url(../img_phone/brand.png) no-repeat left center;width:268px;height:60px;
+		-moz-background-size:60%;
+		     background-size:60%;}
+	.nav{position:absolute;display:none;z-index:99;top:59px;width:100%;}
+    header .nav{background-color:#252947;}
+	header nav>a ,.joinus{float:none;width:100%;background-color:#252947;color:#fff;display:block;text-align:left;
+		padding-left:20px;font-size:1.333em;height:58px;line-height:58px;position:relative;-moz-border-radius:0;border-radius:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;
+		border:none;border-bottom:1px solid #111530;}
+	.nav_list{display:block;float:right;background:url(../img_phone/list.png) no-repeat right center;width:38px;height:28px;
+		margin:15px 20px 10px 0;-moz-background-size:70%;background-size:70%;}
+	.joinus{border:none;margin:0;}
+	header nav>a i,.joinus i{display:inline-block;background:url(../img_phone/down.png) no-repeat center ;width:27px;
+		height:1.166em;-moz-background-size:70%;background-size:70%;vertical-align:middle;position:absolute;right:30px;top:25px;}
+	header nav>a i.on,.joinus i.on{background:url(../img_phone/up.png) no-repeat center center;-moz-background-size:70%;background-size:70%;
+		vertical-align:middle;position:absolute;right:40px;top:25px;}
+	.joinus:hover ,.jointo:hover {color: #fff; background-color: #252947;}
+	.us_phone,.contact_phone{display:block;}
+
+	.indexpro .bd{margin-bottom:0;width:100%;}
+	.indexpro .hd{display:none;}
+
+	.indexnews{float:none;background:#fafafa;width:100%;height:auto;
+	/*float:none;width:100%;background:url(../img_phone/new_bg.png) no-repeat ;background-size:100% 330px;*/}
+	/*.news_icon,.zp_bg01{display:inline-block;background:url(../img_phone/shouye.png) no-repeat; width:50px;height:48px;vertical-align:middle;}*/
+	.news_icon{display:inline-block;background:url(../img_phone/news.png);-moz-background-size:100%;background-size:100%;width:40px;height:40px;}
+	.zp_bg01{display:inline-block;background:url(../img_phone/person2.png);-moz-background-size:100%;background-size:100%;width:43px;height:41px;}
+	.newslist a{display:block;white-space:nowrap; overflow:hidden; -o-text-overflow:ellipsis; text-overflow:ellipsis;}
+
+	.indexrecruitment2{float:none;width:100%;margin-top:20px;/*background:url(../img_phone/zp_index.png) no-repeat;background-size:100% 360px;*/
+     vertical-align:middle;background:#33B972;}
+	footer.phone{display:block;}
+	footer .area{display:none;}
+	.indexnews .mtitle{background:url(../img_phone/new_bg2.png) no-repeat;-moz-background-size:100% 113px;background-size:100% 113px;border-bottom:1px solid #dbe1e7;}
+
+	/*2016.4.1首页*/
+    .mtitle .more{float:left;padding-left:20px;}
+	.mtitle{padding:20px 0 0 10px;}
+	.pa20{padding:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.mtitle .name{padding-left:20px;display:block;}
+	.mtitle .name h2{font-size:20px;display: block;font-weight: 700;line-height: 26px;}
+	.indexnewscon{padding:0;}
+	.stit{padding-left:20px;}
+	.recruit{padding:0 0 0 20px;width:65%;min-width:200px;}
+	.indexpro ul{width:100%;}
+	.indexpro .bd li{width:50%;padding:0 10px;height:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-right:0;overflow:hidden;}
+	/*.indexpro .bd li:nth-of-type(2n+1){padding-left:0;}
+	.indexpro .bd li:nth-of-type(2n+2){padding-right:0;}*/
+	.indexpro .bd li a{width:100%;height:auto;}
+	.indexpro li img{width:100%;height:auto;}
+	.indexpro .bd li p{display:none;}
+	
+	.indexpro{padding-top:0;margin-bottom:0;}
+	.index_more{background:#f0f0f0;font-size:1.166em;height:50px;line-height:50px;display:block;cursor:pointer;margin-bottom:20px;}
+	.index_more p{text-align:center;}
+	.person_m{bottom:0;right:0;display:block;width:37%;text-align:right; padding-right:2%; overflow:hidden}
+	.person_m img{max-width:100%;min-width:40px;}
+	.name p{font-size:12px;color:#8da3bc;}
+	.gotop{display:none;}
+	.newslist li{padding-left:20px;padding-right:20px;}
+	.nav .contact_phone li{margin-bottom:0;}
+	.indexpro .bd li a:hover h5, .indexpro .bd li a:hover p{background-color:#fff;color:#444866;}
+
+
+	/*博雅新闻*/
+	.newsbanner,.topnews h2 label{display:none;}
+	.topnews h2 .time{display:block;float:none;margin-top:10px;font-size:1.166em;}
+	.topnews h2 a{font-size:18px;}
+	.nleft,.pright,.center_con{float:none;padding:20px;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.newspic img{width:100%;}
+	.nright{display:none;}
+	.nright.news_phone{display:block;float:none;width:100%;padding:0 10px;border-left:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.nlist li em{padding-left:7px;}
+	.news_phone li h5 span{background:none;padding-right:0;}
+	.news_phone li img{width:100%;}
+	.news_phone li{margin-left:10px;margin-right:10px;}
+	.nright.news_phone li h5{padding-top:10px;}
+	/*博雅新闻详情*/
+	.artbox img{width:100%;text-indent:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;text-align:center;}
+	.artbox h1{font-size:18px;}
+	.artbox .art_date{display:none;}
+	.artbox .photo{padding:10px 0;}
+
+	/*关于我们-博雅简介*/
+	.aboutbanner,.catelist em{display:none;}
+	.pleft{float:none;width:100%;padding:0 20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.catebox{border-bottom:1px solid #c7d6e5;margin-top:20px;}
+	.catelist{white-space:nowrap;height:55px;overflow:hidden;padding-left:5%;padding-right:5%;}
+	.catelist li{float:left;text-align:center;width:33.3%;border:none;}
+	/*.catelist li.current h3{background:none;}*/
+	.catebox,.catebox ul{position:relative;overflow:hidden;}
+	.catebox ul{padding-left:0;padding-right:0;}
+	.p_prew,.p_next{display:inline-block;width:1.166em;height:27px;background:#fff url(../img_phone/arrow.png) no-repeat;
+		position:absolute;display:none;}
+	.p_prew{background-position:0 0;top:15px;left:0;}
+	.p_next{background-position:-101px 0;top:15px;right:0;}
+	.p_prew.off{background-position:0 -79px;}
+	.p_next.off{background-position:-102px -79px;}
+	.swiper-button-next,.swiper-button-prev{display:inline-block;width:1.166em;height:27px;background: url(../img_phone/arrow.png) no-repeat;
+		position:absolute;z-index:99;vertical-align:middle;padding:20px 50px 20px 0px}
+	.swiper-button-next{background-position:20px 20px;top:12%;left:0;}
+	.swiper-button-prev{background-position:-81px 20px;top:12%;right:0;}		
+	
+	/*关于我们-产业布局*/
+	.worldmap{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.worldmap img{width:100%;height:auto;}
+	.gameplat{width:100%;}
+	.about h3{display:none;}
+	.about h2{text-align:left;font-size:18px;}
+	.hiding,.hiding.on{display:inline-block;background:url(../img_phone/arrow.png) no-repeat;width:15px;height:8px;
+	vertical-align:middle;cursor:pointer;margin-left:10px;}
+	.hiding{background-position:-101px -152px;}
+	.hiding.on{background-position:0 -152px;}
+	.hiding .p_content{display:block;}
+	.hiding.on .p_content{display:none;}
+	/*关于我们-发展历程*/
+	.development{padding-left:0;}
+	.development .cgreen{color:#282d37;}
+	/*关于我们-企业文化*/
+	.culture li .culicon{float:none;width:100%;}
+	.culture li .culinfo {float:none;width:100%;text-align:center;margin-top:10px;}
+	.culture li .culinfo h5{font-size:18px;}
+	/*关于我们-联系我们*/
+	.contact dt em,.rightewm，.companyname img,.rightewm{display:none;}
+	.address li .companyname,.address li .companyadd{float:none;width:100%;text-align:left;}
+	.address li .companyname h5 {margin-top:0;}
+	.cooper li{float:none;width:100%;word-break:break-all}
+	.addressmap img{width:100%;height:auto;}
+	.cooper{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.address img{margin-bottom:10px;}
+	.addressmap img{max-width:100%;}
+	.cooper li.email{width:100%;}
+	.contact dt{font-size:18px;}
+	
+	/*加入我们*/
+	.hrbanner{background:url(../img_phone/zp_bg.png) no-repeat;-moz-background-size:100% 515px;background-size:100% 515px;height:330px;}
+	.hrtitle{display:none;}
+	a.hlink{width:100%;}
+	.more_m{display:inline-block;background:url(../img_phone/arrow.png) no-repeat 0 -209px;width:1.166em;height:27px;
+	vertical-align:middle;padding-right:20px;margin-top:20px;}
+	.hrmore{display:none;}
+	.m_bottom56{margin-bottom:5%;}
+	.hrbox{margin-bottom:20px;float:none;width:100%;margin-top:20px;}
+	.center_con{float:none;padding:0 20px 20px 20px;width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	.jobinfo em{display:none;}
+    /*加入我们-社会招聘*/
+    .hrtabt li{margin-right:0;width:33.3%;margin-bottom:0;padding:0 5px;}
+    .hrtabt li.on a{background-color:#fff;color:#38b774;}
+    .hrtabt li a{background-color:#fff;width:100%;font-weight:bold;height:auto;width:100%;line-height:55px;
+    	font-size:1.333em;}
+    .hrtabt{width:100%;position:relative;border-bottom:1px solid #dddee1;overflow:hidden;margin-bottom:0;}
+    .hrtabt ul{width:100%;overflow:hidden;white-space:nowrap;height:55px;position:relative;}
+    /*人在博雅*/
+    
+    .jointabt li a{font-size:1.333em;}
+    .jointabt ul{height:55px;line-height:55px;overflow:hidden;position:relative;white-space:nowrap;}
+    .ph1 img,.ph2 img,.ph3 img,.ph4 img,.ph5 img,.ph6 img,.ph7 img,.ph8 img,.ph9 img,.ph10 img{height:auto;max-width:100%;text-align:center;}
+    .hrabout{padding:0;}
+
+     /*替换banner*/
+    .aboutbanner,.newsbanner,.gamebanner,.hrbanner,.joinbanner,.sitemapbanner,.faqbanner  {
+    	background:#fffaf4 url(../phone_pic/aboutbanner.jpg) repeat-x center top; }
+	.newsbanner {background-image: url(../phone_pic/newsbanner.jpg); background-color: #05A939;}
+	.gamebanner {background-image: url(../phone_pic/gamebanner.jpg); background-color: #0834AD;}
+	.hrbanner {background-image: url(../phone_pic/hrbanner.jpg);  background-color: #51c0e4;}
+	.joinbanner {background-image: url(../phone_pic/joinbanner.jpg); background-color: #2fc1f2;}
+	.sitemapbanner {background-image: url(../phone_pic/sitemapbanner.jpg); background-color: #243284;}
+	.faqbanner  {background-image: url(../phone_pic/faqbanner.jpg); background-color: #f8f8f8;height:155px;}
+
+	/*游戏详情banner替换*/
+	/*.gbanner1{background-image:url(../phone_pic/probanner1.jpg);}*/
+	#banner .bd li,#banner .bd li .intro,#banner1 .bd li,#banner1 .bd li .intro{display:none;}
+	#banner .bd li,#banner1 .bd li{width:100%;height:100%;display:block;}
+	#b22 a{height:100%;display:block;}
+	/*#b22{background-image: url(../phone_pic/banner160223.jpg);}
+	#b1{background-image: url(../phone_pic/probanner1.jpg);}
+	#b4{background-image: url(../phone_pic/probanner4.jpg);height:100%;}
+	#b2{background-image: url(../phone_pic/probanner2.jpg);}*/
+	#banner .bd .game li{padding-bottom:40%; position:relative;-moz-background-size:auto 100%;background-size:auto 100%;height:100%;}
+	
+	/*游戏详情*/
+	/*.download_phone{margin-top:120px;}*/
+	.load_a{background:rgba(25,29,58,0.8);color:#fff;font-size:1em;float:left;
+		padding:1% 35px 7px 40px;-moz-border-radius:2px;border-radius:2px;cursor:pointer;}
+    .load_a:hover,.load_a:visited{color:#fff;}
+	.load_a img{max-width:100%;margin-bottom:3px;}
+	.load_a div{width:22%;display:inline-block;margin-right:5px;}
+    /*.load_a i{background:url();vertical-align:middle;display:inline-block;
+    	width:20px;height:17px;margin-right:5px;margin-bottom:2px;}*/
+ 
+/*新增样式 2016-04-14*/
+.mtitle .stit h2{font-size:20px;line-height:26px;}
+
+/*.indexpro .bd li{margin: 0;float: none;}*/
+
+/*关于我们 二级导航*/
+.catebox{height: 50px;}
+#banner1{padding-top:40%;position: relative;/*height:245px;*/}
+#banner1 .bd{position: absolute;left: 0;top: 0;height: 100%;width: 100%}
+#banner1 .bd li{background-position:center top;-moz-background-size:auto 100%;background-size:auto 100%;height:100%;/*height:245px;*/}
+#banner .bd li a,#banner1 .bd li a{display:block;height:100%;}
+#banner1 .hd{position:absolute;left:0;bottom:0;width:100%;height:15%;z-index:99;}
+#banner1 .hd ul{width:100%;position:initial;margin-left:0;text-align:center;}
+#banner1 .hd ul li{float:none;display:inline-block;}
+.swiper-container{margin:0 auto;position:relative;overflow:hidden;z-index:1}
+.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;-ms-flex-negative:0;flex-shrink:0;width:100%;position:relative}
+.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:flex;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;transition-property:-webkit-transform;-o-transition-property:transform;-moz-transition-property:transform, -moz-transform;transition-property:transform;transition-property:transform, -webkit-transform, -moz-transform;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;-ms-flex-negative:0;flex-shrink:0;width:100%;height:100%;position:relative}
+.swiper-wp8-horizontal{-ms-touch-action:pan-y;touch-action:pan-y}
+.swiper-container-coverflow .swiper-wrapper,.swiper-container-flip .swiper-wrapper{-ms-perspective:1200px}
+.swiper-container-fade.swiper-container-free-mode .swiper-slide{-webkit-transition-timing-function:ease-out;-moz-transition-timing-function:ease-out;-o-transition-timing-function:ease-out;transition-timing-function:ease-out}
+.swiper-container-fade .swiper-slide{pointer-events:none;-webkit-transition-property:opacity;-moz-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity}
+.swiper-container-fade .swiper-slide .swiper-slide{pointer-events:none}
+.swiper-container-fade .swiper-slide-active,.swiper-container-fade .swiper-slide-active .swiper-slide-active{pointer-events:auto}
+@-webkit-keyframes swiper-preloader-spin{
+	100%{-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes swiper-preloader-spin{
+	100%{-moz-transform:rotate(360deg);transform:rotate(360deg)}
+}
+@keyframes swiper-preloader-spin{
+	100%{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);transform:rotate(360deg)}
+}
+
+.hide{display:inline-block;}
+.swiper-pagination {position: absolute;text-align: center;-webkit-transform: translate3d(0px, 0px, 0px);-moz-transform: translate3d(0px, 0px, 0px);transform: translate3d(0px, 0px, 0px);-webkit-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
+z-index: 10;bottom:20px;width:100%;left:0;}
+.swiper-pagination-bullet{height:13px;width:13px;background:#fff;-moz-border-radius:50px;border-radius:50px;display:inline-block;
+opacity:0.5;margin-right:2%;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background:#fff;opacity:1;}
+/*客服中心*/
+.loca .qlink{display:none;}
+.loca{border-bottom:none;padding:0;}
+.fcontact{padding:20px 0;}
+.service{padding:20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;}
+.fconul{width:100%;}
+.fcontact li{margin-right:0;width:100%;margin-bottom:20px;}
+.flist_o{width:100%;}
+.flistul{width:100%;}
+.flist li{width:50%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.flist a{width:100%;}
+.f_detail{padding:0;width:100%;}
+.faq_det img{width:15%}
+.location h2.faq_det, .loca h2.faq_det{font-size:18px;height:auto;}
+ul.f_dtab li{width:auto;margin-right:2%;font-size:1.166em;padding:0 20px;margin-bottom:10px;height:38px;line-height:38px;}
+.f_dmain li h3{font-size:1.166em;}
+.f_dmain{padding:25px 0 0 0;}
+.fcontact h1{font-size:18px;}
+.loca h2{font-size:18px;}
+	.catebox .cate_iphone{display: none}
+}
+
+ @media screen and (max-width:640px)
+/*关于我们*/
+{    .catebox{overflow: visible}
+	 .catebox .cate_iphone{display: block;width:80%;margin:10px auto;font-size: 20px;text-align: center;border: 1px solid #c3cbe3;background: #f7f7f7;line-height: 30px;z-index: 888;position: relative;}
+	 .catebox .by_birf{display:block;width:100%;height:100%;background: url(../images/arrow_2.png)no-repeat center right 20px;color:#38b774;}
+	 .catebox .bu_mian{z-index: 888;width:100%;position: absolute;left:-1px;top:32px;background:#f7f7f7;border: 1px solid #dbe1e7;border-top: none;padding: 10px 0 }
+	 .catebox .bu_mian a{display: block;width:100%;font-size: 20px;line-height: 35px; }
+	 .catebox ul{display: none;}
+	   /*替换banner*/
+    .aboutbanner,.newsbanner,.gamebanner,.hrbanner,.joinbanner,.sitemapbanner,.faqbanner  {
+    	background:#fffaf4 url(../phone640/aboutbanner.jpg) repeat-x center top; }
+	.newsbanner {background-image: url(../phone640/newsbanner.jpg); background-color: #05A939;}
+	.gamebanner {background-image: url(../phone640/gamebanner.jpg); background-color: #0834AD;}
+	.hrbanner {background-image: url(../phone640/hrbanner.jpg);  background-color: #51c0e4;height:172px;}
+	.joinbanner {background-image: url(../phone640/joinbanner.jpg); background-color: #2fc1f2;height:97px;}
+	.sitemapbanner {background-image: url(../phone640/sitemapbanner.jpg); background-color: #243284;height:100px;}
+	.faqbanner  {background-image: url(../phone640/faqbanner.jpg); background-color: #f8f8f8;height:97px;}
+
+	.area_nav{display: none;}
+	/*游戏详情*/
+	/*.download_phone{margin-top:20px;}*/
+	.load_a{background:rgba(25,29,58,0.8);color:#fff;font-size:1em;float:left;  padding:3px 15px 3px 20px;-moz-border-radius:2px;border-radius:2px;cursor:pointer;}
+
+   #banner1 #b1 .title_c{display: block;position: relative;padding: 5% 7% 0 0;font-size: 8px;width:40%;float:right;}
+	 #banner1 #b1 .title_c h2{font-size: 14px;left:5px;top:-5px;}
+	 #banner1 #b1 .title_c p{font-size: 2px;left:5px;top:-5px;}
+	 #banner1 #b1 .title_c img{display: block;width:24px;float:left;}
+/*首页轮播*/
+.swiper-pagination {position: absolute;text-align: center;-webkit-transform: translate3d(0px, 0px, 0px);-moz-transform: translate3d(0px, 0px, 0px);transform: translate3d(0px, 0px, 0px);-webkit-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;
+z-index: 10;bottom:10px;width:100%;left:0;}
+.swiper-pagination-bullet{height:10px;width:10px;background:#fff;-moz-border-radius:50px;border-radius:50px;display:inline-block;
+opacity:0.5;margin-right:2%;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background:#fff;opacity:1;}
+	
+}
+   
+@media screen and (max-width:550px)
+{
+	/*游戏列表*/
+	header.phone,nav.phone{display:block;}
+	header.pc,section.gamebanner,.location,section.gleft,footer .area{display:none;}
+	.gamelist li{width:90%;float:left;text-align:center;margin-left:5%;margin-right:5%;}
+	/*关于我们-产业布局*/
+	.gameplat li{width:50%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	/*人在博雅*/
+	.jointabt li{width:50%;}
+	/*游戏详情*/
+	/*.download_phone{margin-top:20px;}*/
+	body{font-size:0.1em;}
+	
+}
+@media screen and (max-width:500px)
+{
+	
+/*游戏详情banner替换*/
+/*		.gbanner1{background-image:url(../phone640/probanner1.jpg);}
+		#banner .bd li,#banner .bd li .intro,#banner1 .bd li,#banner1 .bd li .intro{display:none;}
+		#banner .bd li,#banner1 .bd li{width:100%;display:block;}
+		#b22 a{height:auto;display:block;}
+		#b22{background-image: url(../phone640/banner160223.jpg);}
+		#b1{background-image: url(../phone640/probanner1.jpg);}
+		#b4{background-image: url(../phone640/probanner4.jpg);}
+		#b2{background-image: url(../phone640/probanner2.jpg);}*/
+		
+}
+
+
+

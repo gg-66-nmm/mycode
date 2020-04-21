@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>快速排序</title>
+	</head>
+	<body>
+		 <script type="text/javascript">
+		 	var arr=[22,26,32,11,35,21,25,23];
+		 	function qucicsort(start,end){
+		 		if(start>=end){
+		 			return;
+		 		}
+		 		var pivot=arr[start];
+		 		var left=start;
+		 		var right=end;
+		 		while(left!=right){
+		 			while(arr[right]>=pivot&&right>left){
+		 				right--;
+		 			}
+		 			while(arr[left]<=pivot&&left<right){
+		 				left++;
+		 			}
+		 			if(left<right){
+		 				var temp=arr[right];
+		 				arr[right]=arr[left];
+		 				arr[left]=temp;
+		 			}
+		 		}
+		 		arr[start]=arr[left];
+		 		arr[left]=pivot;
+		 		qucicsort(start,left-1);
+		 		qucicsort(right+1,end);
+		 	}
+		 	qucicsort(0,arr.length-1);
+		 	console.log(arr);
+		 </script>
+	</body>
+</html>

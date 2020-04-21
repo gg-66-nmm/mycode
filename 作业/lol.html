@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.top_bg{
+				width: 100%;
+				height: 360px;
+				background: url(img/bg1.jfif) no-repeat top center;
+				position: relative;
+				overflow: hidden;
+			}
+			li{
+				list-style: none;
+				
+			}
+			.nb{				
+				width: 1500px;
+				height: 50px;
+				margin: auto;
+				display: flex;
+				margin-top: 15px;
+				color: #fff;
+				font-size: 20px;
+				position: relative;
+				z-index: 22;
+			}
+			.nb span{
+				padding: 0 30px;
+				line-height: 40px;
+				
+			}
+			.nav:hover +.opacity{
+				display:block;
+				animation: dd 0.5s;
+				/*transform: translateY(20px);
+				transition: all 1s;*/
+			}
+			.nav:hover .nav_two{
+				display: block;
+				animation: dd 0.5s;
+			}
+			@keyframes dd{
+				from{
+					transform: translateY(-30px);
+				}
+				to{
+					transform: translateY(0px);
+				}
+			}
+			.nav_two{
+				display: flex;
+				width: 1500px;
+				margin: auto;
+				position: relative;
+				display: none;
+				transform: translateY(0px);				
+				z-index: 22;
+			}
+			.nav_two ol{
+				width: 143px;
+				font-size: 16px;
+				color: #fff;
+				position:absolute;
+				top: 0;
+				
+			}
+			.nav_two ol:first-child{
+				left: 250px;
+			}
+			.nav_two ol:nth-child(2){
+				left:390px;
+			}
+			.nav_two ol:nth-child(3){
+				left: 538px;
+			}
+			.nav_two ol:nth-child(4){
+				left: 682px;
+			}
+			.nav_two ol:last-child{
+				left: 822px;
+			}
+			.nav_two ol li{
+				padding: 5px;
+			}
+			.opacity{
+				width: 100%;
+				height: 360px;
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,0.5);
+			}
+			.fanart{
+				width: 100%;
+				height: 100%;
+				/*background-color: #eee;*/
+			}
+			.content{
+				width: 1500px;
+				margin: auto;
+			}
+			.content_left{
+				width: 1000px;
+			}
+			.content_title{
+				width: 900px;
+				height: 50px;
+				overflow: hidden;
+				
+			}
+			.content_title h2{
+				float: left;
+				font-weight: 500;
+				border-left: 3px solid blue;
+			}
+			.content_title span{
+				float: right;
+			}
+			.content ul li{
+				width: 200px;
+				height: 200px;
+				float: left;
+				position: relative;
+				overflow: hidden;
+				margin: 10px 15px 0 0;
+			}
+			.content ul li img{
+				width: 200px;
+				height: 200px;
+				transform: scale(1);
+				transition: all 0.5s;
+			}
+			.title_text{
+				width: 180px;
+				height: 40px;
+				position: absolute;
+				top: 200px;
+				left: 0;
+				padding: 10px;
+				color: #fff;
+				background-color: rgba(0,0,0,0.5);
+				transition: all 1s;
+				/*display: none;*/
+				/*transform: translateY(60px);*/
+			}
+			@keyframes move{
+				from{transform: translateY(60px);}
+				to{transform: translateY(0px);}
+			}
+			.content ul li:hover img{
+				transform: scale(1.3);
+			}
+			.content ul li:hover .title_text{
+				/*transform: translateY(60px);*/
+				/*animation: move 1s ;
+				transform: translateY(0px);*/
+				/*display: block;*/
+				top: 140px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top_bg">
+			<div class="nav">
+				
+				<div class="nb">
+					<span><img src="img/logo.png" title="英雄联盟官网"/></span>
+					<span>游戏资料</span>
+					<span>商城/合作</span>
+					<span>社区互动</span>
+					<span>赛事官网</span>
+					<span>自助系统</span>					
+				</div>
+				<div class="nav_two">
+					<ol>
+						<li>我爱你中国</li>
+						<li>平安夜快乐</li>
+						<li>今晚去哪嗨</li>
+						<li>项目40组</li>
+						<li>web前端</li>
+					</ol>
+					<ol>
+						<li>我爱你中国</li>
+						<li>平安夜快乐</li>
+						<li>今晚去哪嗨</li>
+						<li>项目40组</li>
+						<li>web前端</li>
+					</ol>
+					<ol>
+						<li>我爱你中国</li>
+						<li>平安夜快乐</li>
+						<li>今晚去哪嗨</li>
+						<li>项目40组</li>
+						<li>web前端</li>
+					</ol>
+					<ol>
+						<li>我爱你中国</li>
+						<li>平安夜快乐</li>
+						<li>今晚去哪嗨</li>
+						<li>项目40组</li>
+						<li>web前端</li>
+					</ol>
+					<ol>
+						<li>我爱你中国</li>
+						<li>平安夜快乐</li>
+						<li>今晚去哪嗨</li>
+						<li>项目40组</li>
+						<li>web前端</li>
+					</ol>
+				</div>				
+			</div>	
+			<div class="opacity"></div>
+		</div>
+		<div class="fanart">
+			<div class="content">
+				<div class="content_left">
+					<div class="content_title">
+						<h2>FANART创作馆</h2>
+						<span>更多></span>
+					</div>
+					<ul>
+						<li>
+							<img src="img/ll1.jfif" alt="英雄图表化" title="英雄图表化" />
+							<div class="title_text">
+								<h5>英雄图表化</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll2.jfif" alt="画一张半身像" title="画一张半身像" />
+							<div class="title_text">
+								<h5>画一张半身像</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll3.jfif" alt="希维尔同人" title="希维尔同人" />
+							<div class="title_text">
+								<h5>希维尔同人</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll4.jfif" alt="真实伤害 艾克" title="真实伤害 艾克" />
+							<div class="title_text">
+								<h5>真实伤害 艾克</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll5.jfif" alt="FPX—李青" title="FPX—李青" />
+							<div class="title_text">
+								<h5>FPX—李青</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll6.jfif" alt="刀妹" title="刀妹" />
+							<div class="title_text">
+								<h5>刀妹</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll8.jfif" alt="双生奶妈 索拉卡" title="双生奶妈 索拉卡" />
+							<div class="title_text">
+								<h5>双生奶妈 索拉卡</h5>
+							</div>
+						</li>
+						<li>
+							<img src="img/ll7.jfif" alt="真实伤害" title="真实伤害" />
+							<div class="title_text">
+								<h5>真实伤害</h5>
+							</div>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

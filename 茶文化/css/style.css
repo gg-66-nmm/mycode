@@ -1,0 +1,155 @@
+body{
+	width: 810px;
+	margin: 0 auto;
+	font-size:14px ;
+	border: 1px solid #ccc;
+	background-color: peachpuff;
+}
+ul{
+	list-style: none;
+}
+h2{
+	color: #FFFFFF;
+	background-color: yellowgreen;
+	padding-left: 5px;
+	margin: 0;
+}
+h3{
+	width: 190px;
+	color: white;
+	background-color: greenyellow;
+	text-align: center;
+	margin-left: 5px;
+}
+.header{
+	background-color:#ffffff;
+}
+.header ul{	
+	display: flex;
+	margin: 0;
+	padding-left: 620px;
+	background-color: greenyellow;
+	height: 22px;
+	line-height: 22px;
+}
+.header li{
+	padding: 0 15px;
+}
+img{
+	padding: 5px 5px 0 5px;
+}
+.body{
+	display: flex;
+	margin-top: 4px;
+}
+.left{
+	width: 200px;
+	padding: 5px;
+	background-color:#ffffff;
+}
+.left_gg,.left_tea{
+	border-bottom: 1px dashed #000;
+	padding: 20px 0;
+}
+.left li{
+	padding: 5px ;
+	font-size: 16px;
+}
+.foot{
+	background-color:#ffffff;
+	margin-top: 3px;
+}
+.foot_pic{
+	position: relative;
+}
+.bq{
+	position: absolute;
+	z-index: 2;
+	top: 878px;
+	left: 48%;
+}
+.right{
+	background-color:#ffffff;
+	margin-left: 3px;
+	width: 600px;
+}
+.right_pic{
+	position: relative;
+}
+.right_pic img{
+	padding-left: 40px;
+}
+.right-mes{
+	position: absolute;
+	z-index: 2;
+	top: 170px;
+	width: 595px;
+}
+/*留言*/
+input{
+	border: 1px solid #ccc;
+	width: 220px;
+	height: 35px;
+}
+table{
+	margin-left: 150px;
+	margin-top: 80px;
+}
+textarea{
+	width: 215px;
+}
+td{
+	width: 30px;
+}
+tr{
+	height: 60px;
+}
+.btn{
+	text-align: center;
+}
+button{
+	margin: 10px 20px;
+	padding: 5px 10px;
+}
+/*西湖龙井*/
+.right-mes p{
+	margin: 5px 15px;
+	font-size: 16px;
+	text-indent: 2em;
+}
+/*首页*/
+.list{
+	margin-top: 15px;
+}
+.list_pic{
+	margin: 0;
+}
+.list_pic img{
+	width: 180px;
+	height: 160px;
+}
+.list_mes{
+	display: flex;
+}
+.mes{
+	padding-top: 36px;
+	height: 110px;
+}
+.dj{
+	color: purple;
+	font-weight: 500;
+	width: 110px;
+}
+.rem_pic{
+	display: flex;
+}
+.rem_pic img{
+	width:300px;
+	height: 200px;
+	padding-left: 50px;
+}
+.list_p img{
+	width: 260px;
+	height: 180px;
+	padding: 10px 0 5px 20px;
+}

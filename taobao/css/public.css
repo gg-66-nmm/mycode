@@ -1,0 +1,13 @@
+.all{width: 1000px;margin: 0 auto;}
+.top{width: 1000px;height: 25px;background-color: #000;}
+.leftblack{width: 20px; height: 200px;background-color: #000;float: left;}
+.pic{width: 500px;height: 200px;}
+.main_left{margin-left: 50px;position:absolute;float: left;}
+.title{margin-left: 50px;}
+.text{width: 230px;float: left;}
+.blr_pic{border: 2px inset #ccc;margin-left: 20px;width: 240px;}
+.text p{text-indent: 2em;color: #a2a2a2;font-size: 12px;font-family: "宋体";}
+.text p:hover{color: #000;font-size:14px; font-family: "楷体";}
+.main_left li{list-style: circle;color: #bcbf5e;}
+.main_left li:hover{color: red;}
+.main_right{position: relative;left: 550px;}

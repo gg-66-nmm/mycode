@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="image/yx.png" />
+		<title>王者荣耀</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/demo.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script type="text/javascript">
+		var index=0;
+		function changeImage(){
+			var img=document.getElementById("img");
+			var curIndex=index%9+1;
+			img.src="image/l"+curIndex+".jpg";
+			index+=1;
+		}
+		function init(){
+			setInterval("changeImage()",2000);
+		}
+		
+	</script>
+	<script type="text/javascript">
+		function xs(aa){
+			if(aa=='xs'){
+				document.getElementById("box1").style.display="block";
+			}
+			if(aa=='mc'){
+				document.getElementById("box2").style.display="block";
+			}
+			if(aa=='yao'){
+				document.getElementById("box3").style.display="block";
+			}
+			if(aa=='yzj'){
+				document.getElementById("box4").style.display="block";
+			}
+		}
+			
+			
+		function yc(){
+			document.getElementById("box1").style.display="none";
+			document.getElementById("box2").style.display="none";
+			document.getElementById("box3").style.display="none";
+			document.getElementById("box4").style.display="none";
+		}
+		
+		function login(cc){
+			if(cc=='lg'){
+				document.getElementById("login").style.display="block";
+			}
+			if(cc=='wx'){
+				document.getElementById("wxdl").style.display="block";
+			}
+			if(cc=='qq'){
+				document.getElementById("qqdl").style.display="block";
+			}
+			document.getElementById("shadow").style.display="block";
+		}
+		function exit(bb){
+			if(bb=='lg'){
+				document.getElementById("login").style.display="none";
+			}
+			if(bb=='wx'){
+				document.getElementById("wxdl").style.display="none";
+			}
+			if(bb=='qq'){
+				document.getElementById("qqdl").style.display="none";
+			}
+			document.getElementById("shadow").style.display="none";
+		}
+	</script>
+	<body onload="init()">
+		<!--遮罩层-->
+			<div id="shadow"></div>
+		<div class="wz">
+			
+			<!--top开始-->
+			<div class="top">
+				<img class="top_img" src="img/logo.jpg" width="220" height="50"/>
+				<ul>
+					<li><a href="#">官方首页<br/><small>HOME</small></a></li>
+					<li><a href="#">游戏资料<br/><small>DATE</small></a></li>
+					<li><a href="#">内容中心<br/><small>CONTENT</small></a></li>
+					<li><a href="#">赛事中心<br/><small>MATCH</small></a></li>
+					<li><a href="#">百态王者<br/><small>CULTURE</small></a></li>
+					<li><a href="#">社区互动<br/><small>COMMUNITY</small></a></li>
+					<li><a href="#">玩家支持<br/><small>PLAYER</small></a></li>					
+				</ul>
+				<div onclick="login('lg')" class="top_login">
+					<img src="image/yx.png" />
+					欢迎登录<br/><small>LOGIN</small>
+				</div>
+			</div>
+			<div class="img">
+				<img src="image/top.jpg" width="1500"height="750"/>
+			</div>
+			<div class="yy"></div>
+			<!--top结束-->
+			<!--登录-->
+			<div id="login" class="login">
+				<div class="login_top">
+					<img src="img/logo6.jpg"/>
+					<span onclick="exit('lg')" id="exit" title="关闭">X</span>
+				</div>				
+				<h2>请选择你的登录平台</h2>
+				<ul>
+					<li id="list1" onclick="login('wx')">
+						<img src="img/wx.jpg"/>
+						<span>微信用户登录</span></li>
+					<li id="list2" onclick="login('qq')">
+						<img src="img/QQ1.jpg"/>
+						<span>QQ用户登录</span></li>
+				</ul>
+			</div>
+			<div id="wxdl" class="wx_login">
+				<span onclick="exit('wx')" title="关闭">X</span>
+				<h2>微信登录</h2>
+				<img src="image/wx_login.jpg"/>
+				<h5>请使用微信扫描二维码登录“王者荣耀”</h5>
+			</div>
+			<div id="qqdl" class="qq_login">
+				<a onclick="exit('qq')" title="关闭">X</a>
+				<h2>账号密码登录</h2>
+				<form action="#" method="post">
+					<input type="text" id="username" value="" placeholder="QQ号/手机号/邮箱登录" />
+					<input type="password" id="psw" value="" placeholder="密码"/>
+					<input type="submit" onclick="btn()" id="btn" value="登录" />
+				</form>
+				
+			</div>
+			<!--右侧固定-->
+			<div class="dw">
+				<img src="image/ewm.png"/>
+				<ol>
+					<li>官方微博</li>
+					<li>微信公众号</li>
+					<li>亡者身份卡</li>
+					<li>召唤师调研</li>
+				</ol>
+			</div>
+			<!--广告开始-->
+			<div class="gg">
+				<div class="pic">
+					<img id="img" src="image/l1.jpg" width="600"height="305"/>
+				</div>
+				<div class="hot">
+					<ul>
+						<li>热门</li>
+						<li>新闻</li>
+						<li>公告</li>
+						<li>活动</li>
+						<li>赛事</li>
+					</ul><br />
+					<h3>12月3日全服不停机更新公告</h3>
+					<ol>
+						<li>王者创意互动之旅 蔡文姬-繁星吟游秒杀即将开启<small>12/04</small></li>
+						<li>星元上新丨英雄齐换装，圣诞头饰、武器抢先看<small>12/06</small></li>
+						<li>助力王者创意互动周 蔡文姬邀您演奏赢好礼<small>12/08</small></li>
+						<li>体验服【资格申请活动】即将开启<small>12/04</small></li>
+						<li>魔法球更新公告<small>12/04</small></li>
+					</ol>
+				</div>
+				<div class="gf">
+					<a href="#" class="gf_enter">
+						<img src="img/gf1.png"/>
+					</a>
+					<a href="#" class="gf_enter">
+						<img src="img/gf2.jpg"/>
+					</a>
+					<a href="#" class="gf_enter">
+						<img src="img/gf3.jpg"/>
+					</a>
+					<a href="#" class="gf_enter">
+						<img src="img/gf4.jpg"/>
+					</a>
+				</div>
+			</div>
+			
+			<!--内容开始-->
+			<div class="main">
+				<div class="main_left">
+					<div class="main_left_top">
+						<h2>内容中心</h2>
+						<a href="#">更多</a>
+					</div>
+					<div class="main_left_title">
+						<ul>
+							<li><a href="#">精品栏目</a></li>
+							<li><a href="#">赛事精品</a></li>
+							<li><a href="#">英雄攻略</a></li>
+						</ul>
+					</div>
+					<div class="main_left_menu">
+							<ul>
+								<li><a href="#">最新</a></li>
+								<li><a href="#">百星王者带你飞</a></li>
+								<li><a href="#">峡谷情报局</a></li>
+								<li><a href="#">零度王者视角</a></li>
+								<li><a href="#">峡谷重案组第三季</a></li>
+								<li><a href="#">王者克制论</a></li>
+								<li><a href="#">上分拍档</a></li>
+							</ul>
+					</div>
+					<div class="video">
+						<table width="900" height="350">
+							<tr>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=552284&e_code=pvpweb.searchiTag.iTag2609">
+										<img src="https://itea-cdn.qq.com/file/tgl/20190908/9826a78321e3549d837f73c81c25738b.1567915410.ccad8e85ae6ce1d90c20b0564159b45d.230x140_10354.jpg"/>
+										<span id="voide_title">
+											【零度王者视角】第五十一期：暴击不再唯一，破甲流射手
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=574314">
+										<img src="//itea-cdn.qq.com/file/tgl/20191205/53873bcaec5c3fe56e9d681410452d30.1575515228.9709ee46fe3e77ce42d027339f038d77.230x140_38347.jpg"/>
+										<span id="voide_title">
+											【王者克制论】曹三刀丝血反杀太霸道？李九教你完美克制曹操
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573993">
+										<img src="//itea-cdn.qq.com/file/tgl/20191204/a8f73a12cdddf0f835c47d97c73a52de.1575427262.f75baf40b753a6e14ce1b426627c79d8.230x140_8729.jpg"/>
+										<span id="voide_title">
+											【百星王者带你飞】第118期：起舞弄清影 绝世舞姬貂蝉
+										</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573584">
+										<img src="//shp.qpic.cn/cfwebcap/0/66f247064caf2d8760b20de6c9663e9d/0/?width=230&height=140"/>
+										<span id="voide_title">
+											【棋高一招】第三期：一飞冲天！安然倾情演绎”飞天蜀刺流“的惊天秘技
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191128/a8f73a12cdddf0f835c47d97c73a52de.1574938598.5425161c4b6efa623d88455752eb1af7.230x140_10776.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20190809/1aacbad9efd57abed1a3fabb06fee49d.1565315680.817ddddf7da3c8863470f05075d612fc.720x405_192388.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="main_left_top">
+						<h2>赛事中心</h2>
+						<a href="#">更多</a>
+					</div>
+					<div class="main_left_bottom">
+						<ul>
+							<li><a href="#">KPL</a></li>
+							<li><a href="#">冠军杯</a></li>
+							<li><a href="#">KRKPL</a></li>
+							<li><a href="#">城市赛</a></li>
+							<li><a href="#">高校联赛</a></li>
+							<li><a href="#">TGA</a></li>
+							<li><a href="#">微信游戏邀请赛</a></li>
+							<li><a href="#">模拟战邀请赛</a></li>
+						</ul>
+					</div>
+					<div class="events">
+						<div class="events_pic">
+							<img src="//ossweb-img.qq.com/upload/webplat/info/yxzj/20190909/11972441328546.jpg"/>
+						</div>
+						<div class="new">
+							<h1>KPL秋季赛总决赛活动来袭，和你的战队一起上场一起赢！</h1>
+							<ol>
+								<li>
+									<span id="list">KPL</span>
+									<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&tid=435872">
+										KPL秋季赛鱼你说第十三期：冲向武汉，总决赛上演“双G”大战
+									</a>
+									<small>12-04</small>
+								</li>
+								<li>
+									<span id="list">KPL</span>
+									<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&tid=435872">
+										KPL秋季赛鱼你说第十三期：冲向武汉，总决赛上演“双G”大战
+									</a>
+									<small>12-04</small>
+								</li>
+								<li>
+									<span id="list">KPL</span>
+									<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&tid=435872">
+										KPL秋季赛鱼你说第十三期：冲向武汉，总决赛上演“双G”大战
+									</a>
+									<small>12-04</small>
+								</li>
+								<li>
+									<span id="list">KPL</span>
+									<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&tid=435872">
+										KPL秋季赛鱼你说第十三期：冲向武汉，总决赛上演“双G”大战
+									</a>
+									<small>12-04</small>
+								</li>
+								<li>
+									<span id="list">KPL</span>
+									<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&tid=435872">
+										KPL秋季赛鱼你说第十三期：冲向武汉，总决赛上演“双G”大战
+									</a>
+									<small>12-04</small>
+								</li>
+								<li>
+									<span id="list">KPL</span>
+									<a href="https://pvp.qq.com/web201605/newsDetail.shtml?G_Biz=web&tid=435872">
+										KPL秋季赛鱼你说第十三期：冲向武汉，总决赛上演“双G”大战
+									</a>
+									<small>12-04</small>
+								</li>
+							</ol>
+						</div>
+					</div>
+			
+					<div class="video">
+						<table width="900" height="350">
+							<tr>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=552284&e_code=pvpweb.searchiTag.iTag2609">
+										<img src="https://itea-cdn.qq.com/file/tgl/20190908/9826a78321e3549d837f73c81c25738b.1567915410.ccad8e85ae6ce1d90c20b0564159b45d.230x140_10354.jpg"/>
+										<span id="voide_title">
+											【零度王者视角】第五十一期：暴击不再唯一，破甲流射手
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+								<td>
+									<a href="https://pvp.qq.com/v/detail.shtml?G_Biz=18&tid=573807">
+										<img src="//itea-cdn.qq.com/file/tgl/20191203/a8f73a12cdddf0f835c47d97c73a52de.1575342538.41b272d8f476a45a1ac4f66f0dcc70e5.230x140_16463.jpg"/>
+										<span id="voide_title">
+											【峡谷情报局】第91期：最高荣耀战力盘点，鲁班大师套路展示
+										</span>
+									</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="main_right">
+					<div class="right_fir">
+						<div class="fir_top">
+							<h2>英雄/皮肤</h2>
+							<a href="#">更多</a>
+						</div>
+						<div class="fir_title">
+							<ul>
+								<li>
+								<a href="#">最新英雄</a>	</li>
+								<li>
+									<a href="#">最新皮肤</a></li>
+								<li>
+									<a href="#">周免英雄</a></li>
+							</ul>
+						</div>
+						<div class="yx">
+							<img src="//game.gtimg.cn/images/yxzj/img201606/freehero/horizontal/525.jpg"/>
+							<div class="yx_text">
+								<h3>新英雄：鲁班大师</h3>
+								<small>上线时间：2019.11.28</small>
+							</div>							
+						</div>
+						<div class="hero">
+							<ul>
+								<li>
+									<a class="hero_list" href="#"  onmouseover="xs('xs')" onmouseout="yc('xs')">
+										<img src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/523.jpg"/>
+										<div id="box1">西施</div>
+									</a>
+								</li>
+								<li>
+									<a class="hero_list" href="#"  onmouseover="xs('mc')" onmouseout="yc('mc')">
+										<img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/518.jpg"/>
+										<div id="box2">马超</div>
+									</a>
+								</li>
+								<li>
+									<a class="hero_list" href="#"  onmouseover="xs('yao')" onmouseout="yc('yao')">
+										<img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/522.jpg"/>
+										<div id="box3">耀</div>
+									</a></li>
+								<li>
+									<a class="hero_list" href="#"  onmouseover="xs('yzj')" onmouseout="yc('yzj')">
+										<img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/506.jpg"/>
+										<div id="box4">云中君</div>
+									</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right_fir">
+						<div class="fir_top">
+							<h2>KPL赛程</h2>
+							<a href="#">更多</a>
+						</div>
+						<div class="fir_title">
+							<ul>
+								<li>
+								时间	</li>
+								<li>
+									战队</li>
+								<li>
+									战队</li>
+							</ul>
+						</div>
+						<div class="yx">
+							<img src="//game.gtimg.cn/images/yxzj/img201606/freehero/horizontal/525.jpg"/>
+							<div class="yx_text">
+								<h3>新英雄：鲁班大师</h3>
+								<small>上线时间：2019.11.28</small>
+							</div>							
+						</div>
+						<div class="hero">
+							<ul>
+								<li>
+									<a href="#"><img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/523.jpg"/></a>
+								</li>
+								<li><a href="#"><img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/518.jpg"/></a></li>
+								<li><a href="#"><img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/522.jpg"/></a></li>
+								<li><a href="#"><img class="yx_hero" src="//game.gtimg.cn/images/yxzj/img201606/freehero/vertical/506.jpg"/></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="foot">
+					<div class="foot_pic">
+						<img id="img1" src="img/logo4.jpg"/>
+						<img id="img2" src="img/logo5.jpg"/>
+					</div>
+					<div class="foot_text">
+						<div class="foot_left">
+							<h4>温馨提示：本游戏适合16岁(含)以上玩家娱乐</h4>
+							<p>《王者荣耀》全部背景故事发生于架空世界“王者大陆”中。相关人物、地理、事件均为艺术创作，并非正史。若因观看王者故事对相关历史人物产生兴趣，建议查阅正史记载。</p>
+						</div>
+						<div class="foot_right">
+							<span>抵制不良游戏</span>
+							<span>拒绝盗版游戏</span>
+							<span>注意自我保护</span>
+							<span>谨防上当受骗</span>
+							<span>适度游戏益脑</span>
+							<span>沉迷游戏伤身</span>
+							<span>合理安排时间</span>
+							<span>享受健康生活</span>
+							<p>全国文化市场统一举报电话：12318</p>
+						</div>
+					</div>
+				</div>
+		</div>
+	</body>
+</html>

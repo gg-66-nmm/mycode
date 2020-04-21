@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script type="text/javascript">
+		function checkAll(){
+			var check1=document.getElementById("check1");
+			var checked=check1.checked;
+			var checks=document.getElementsByName("check2");
+			for(var i=0;i<checks.length;i++){
+				var check2=checks[i];
+				check2.checked=checked;
+			}
+		}
+	</script>
+	<style type="text/css">
+		@keyframes my{
+			from{
+				height: 100px;
+			}
+			to{
+				height: 300px;
+			}
+		}
+	</style>
+	<body>
+		<table border="1" cellspacing="0" width="300" height="200">
+			<tr>
+				<td> <input type="checkbox" onclick="checkAll()" id="check1" /></td></tr>
+			<tr>
+				<td><input type="checkbox" name="check2" /></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="check2" /></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="check2" /></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="check2" /></td>
+			</tr>
+			
+		</table>
+	</body>
+</html>

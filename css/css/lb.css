@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.lunbo {
+	position: relative;
+	width: 500px;
+	height: 270px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+
+#list {
+	width: calc(500px * 7);
+	/*width: 3500px;*/
+	height: 270px;
+	position: absolute;
+}
+
+#list img {
+	width: 500px;
+	height: 270px;
+	float: left;
+}
+.arrow{
+	width: 30px;
+	height: 35px;
+	line-height: 30px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.3);
+	font-size: 40px;
+	position: absolute;
+	top: 100px;
+	z-index: 20;
+	display: none;
+}
+.arrow:hover{
+	background-color: rgba(0,0,0,0.7);
+}
+.lunbo:hover .arrow{
+	display: block;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+#prev{
+	left: 10px;
+	
+}
+#next{
+	right: 10px;
+}

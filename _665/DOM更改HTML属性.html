@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM更改HTML属性</title>
+	</head>
+	<body>
+		<img src="img/1.jpg" id="img" style="width: 200px; height: 200px;"/>
+		<a href="http://www.baidu.com" id="lianjie" >点击事件</a>
+		<input type="text" id="shuru" value="张三" />
+		<button onclick="btn()">魔术变变变</button>
+		<script type="text/javascript">
+			var img=document.getElementById('img');
+			var lianjie=document.getElementById('lianjie');
+			var shuru=document.getElementById('shuru');
+			window.btn=function(){
+				img.src='img/list1.jpg';
+				lianjie.href='http://www.taobao.com';
+				shuru.value='李四';
+			}
+		</script>
+	</body>
+</html>

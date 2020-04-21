@@ -1,0 +1,124 @@
+<!DOCTYPE html>ar croll!=
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.empty{
+				width: 1000px;
+				height: 1200px;
+				margin: auto;
+				background-color: #ccc;
+			}
+			.left{
+				position: fixed;
+				width: 60px;
+				left: 10px;
+				bottom: 110px;
+			}
+			ul li{
+				width: 60px;
+				height: 60px;
+				background-color: #ccc;
+				list-style: none;
+			}
+			ul li a{
+				text-decoration: none;
+				width: 60px;
+				height: 60px;
+				display: block;
+				line-height: 60px;
+				text-align: center;
+				font-size: 14px;
+			}
+			ul li .floor{
+				display: block;
+			}
+			ul li .text{
+				display: none;
+				background-color: darkred;
+			}
+			.fl{
+				width: 1000px;
+				height: 400px;
+				margin: auto;
+			}
+			.fl:nth-child(2n){
+				background-color: yellowgreen;
+			}.fl:nth-child(2n-1){
+				background-color: darkturquoise;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="empty"></div>
+		<div class="left" id="left">
+			<ul>
+				<li>
+					<a href="javascript:;" class="floor">1F</a>
+					<a href="javascript:;" class="text">百货</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="floor">2F</a>
+					<a href="javascript:;" class="text">男装</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="floor">3F</a>
+					<a href="javascript:;" class="text">女装</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="floor">4F</a>
+					<a href="javascript:;" class="text">童装</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="floor">5F</a>
+					<a href="javascript:;" class="text">裤子</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="floor">6F</a>
+					<a href="javascript:;" class="text">运动</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="floor">7F</a>
+					<a href="javascript:;" class="text">电子</a>
+				</li>
+			</ul>
+		</div>
+		<div class="fl f1"></div>
+		<div class="fl f2"></div>
+		<div class="fl f3"></div>
+		<div class="fl f4"></div>
+		<div class="fl f5"></div>
+		<div class="fl f6"></div>
+		<div class="fl f7"></div>
+		<div class="empty"></div>
+		<script type="text/javascript">
+			var leftLis=document.getElementById("left").getElementsByTagName("li")[0];
+			var flArr=[];
+			var floffsetTopArr=[];
+			for(var i=0;i<document.body.childNodes.length;i++){
+				if(document.body.childNodes[i].nodeType==1&&document.body.childNodes[i].className.indexOf("fl")!=1){
+					flArr.push(document.body.childNodes[i]);
+					floffsetTopArr.push(document.body.childNodes[i].offsetTop);
+					var flArrLength=flArr.length;
+					floffsetTopArr.push(flArr[flArrLength-1].clientHeight+floffsetTopArr[flArrLength-1]);
+					var nowfloor=NAN;
+					window.scroll=function(){
+						var scrollTop=document.body.scrollTop||document.documentElement.scrollTop;
+						for(var i=0;i<flArrLength;i++){
+							if(scrollTop>=floffsetTopArr[i]-200&&scrollTop<floffsetTopArr[i+1]-200){
+								if(i!=nowfloor){
+									
+								}
+							}
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

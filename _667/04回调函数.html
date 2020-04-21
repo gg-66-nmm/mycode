@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: greenyellow;
+				position: absolute;
+				left: 100px;
+				top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<script type="text/javascript" src="js/animate-2.0.0.js" charset="UTF-8"></script>
+		<script type="text/javascript" >
+			var oDiv=document.getElementsByTagName('div')[0];
+			huidiao();
+			function huidiao(){
+				animate(oDiv,{'left':600},300,function(){
+					animate(this,{'top':600,'left':300},300,function(){
+						animate(this,{'top':400,'left':400},300,function(){
+							animate(this,{'top':200,'left':200},300,function(){
+								animate(this,{'top':100,'left':100},300,function(){
+									huidiao();
+								})
+							})
+						})
+					})
+				})
+			}
+			//huidiao();
+		</script>
+	</body>
+</html>

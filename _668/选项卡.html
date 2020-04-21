@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 800px;
+				border: 1px solid #000;
+				margin: 100px auto;
+				text-align: center;
+			}
+			.box ul{
+				margin-left: 12px;
+				list-style: none;
+				overflow: hidden;
+			}
+			.box ul li{
+				float: left;
+				margin-left: 1px;
+				width: 110px;
+				height: 30px;
+				font-size: 25px;
+				color: #fff;
+				background-color: yellowgreen;
+			}
+			.box ul li.selected{
+				background-color: red;
+			}
+		</style>
+	</head>
+	<div class="box">
+		<ul>
+			<li>星期一</li>
+			<li>星期二</li>
+			<li>星期三</li>
+			<li>星期四</li>
+			<li>星期五</li>
+			<li>星期六</li>
+			<li>星期日</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+	<script type="text/javascript">
+		$(".box ul li").click(function(){
+			$(this).addClass("selected");
+			$(this).siblings().removeClass("selected");
+		})
+	</script>
+	<body>
+	</body>
+</html>

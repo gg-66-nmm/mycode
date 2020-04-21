@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		table{margin: 0 auto; font-size: 12px;}
+		input{border: 1px inset #ccc;}
+	</style>
+	<body bgcolor="#ff9900">
+		<form action="success.html">
+			<table bgcolor="#ffffcc" cellspacing="0" width="600"height="400" >
+				<tr>
+					<td colspan="2" align="middle" bgcolor="yellow">请完成以下表格</td>
+				</tr>				
+				<tr>
+					<td align="right" width="20%">姓名</td>
+					<td><input type="text" name="username" size="15"/></td>
+					
+				</tr>
+				<tr>
+					<td align="right">密码</td>
+					<td><input type="password" name="psw" size="15"/></td>
+				</tr>
+				<tr>
+					<td align="right" ></td>
+					<td>请在此处填写姓名，<br/><font color="red">字符最长为四个汉字，或八个英文字母</font></td>
+				</tr>
+				<tr>
+					<td align="right" >性别</td>
+					<td>
+						<input type="radio" name="sex" id="sex" value="男" checked/>男
+						<input type="radio" name="sex" id="sex" value="女" />女
+					</td>
+					
+				</tr>
+				<tr>
+					<td align="right" >电子邮件</td>
+					<td><input type="text" name="mail" size="25"/></td>
+				</tr>
+				<tr>
+					<td align="right" >职业</td>
+					<td>
+						<select name="occ" id="">
+							<option value="">选择您的职业</option>
+							<option value="">教育</option>
+							<option value="" selected>IT</option>
+							<option value="">行政</option>
+							<option value="">法律</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="right" >个人爱好</td>
+					<td>
+						<input type="checkbox" name="hobby" />电脑网络
+						<input type="checkbox"/ name="hobby">影视娱乐
+						<input type="checkbox" name="hobby" />棋牌游戏<br />
+						<input type="checkbox" name="hobby" />读书读报
+						<input type="checkbox" name="hobby" />美酒佳肴
+						<input type="checkbox" name="hobby" />绘画书法
+					</td>					
+				</tr>
+				
+				<tr>
+					<td align="right" ></td>
+					<td>在此选择兴趣爱好，可以选择一个以上的选项。</td>
+				</tr>
+				<tr>
+					<td align="right" >留言内容</td>
+					<td>
+						<textarea name="message" cols="40" rows="4" style="resize: none;"></textarea>
+					</td>
+				</tr>
+				<tr bgcolor="yellow">
+					<td colspan="2" align="middle">填写完成后，选择下面的提交按钮提交表单。</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="middle">
+						<input type="submit" name="submit" value="提交" />
+						<input type="reset" name="reset" value="重置" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

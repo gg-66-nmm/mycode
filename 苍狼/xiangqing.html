@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="bootstrap-3.3.7-dist/js/jquery-1.12.3.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<link rel="icon" href="img/logo.jpg" />
+		<title>【苍狼精品特卖】品牌特卖_确保正品_确保低价_货到付款</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.product .item{
+				width: 90%;
+				height: 90%;
+				background-color: #f5f5f5;
+				border: 1px solid #e2e2e2;
+				/*text-align: center;*/
+				margin: 10px auto 0px;
+				padding:  5%;
+				border: 1px solid #e2e2e2;
+				border-radius: 5px;
+			}
+			.product .item:hover{
+				/*border: 1px solid red;*/
+				box-shadow: 0 0 7px 3px #ccc inset;
+			}
+			/*.item{
+				width: 25%;
+				height: 100px;
+			}*/
+			.product .item img{
+				width: 100%;
+				height: 200px;
+				margin:5px auto;
+			}
+			.product .item p{
+				display:-webkit-box;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				font-size: 12px;
+			}
+			.product .item .price{
+				color: red;
+				font-size: 16px;
+			}
+			.product .item .del{
+				color: #999;
+				font-weight: 100;
+				font-size: 11px;
+				text-decoration: line-through;
+			}
+			.product .lis{
+				margin-top: 25px;
+			}
+		</style>
+	</head>
+	<body style="background: #dcdcdc;">
+		<div class="top">
+			<div class="container">
+				<div class="top-left">
+					<div class="address fd hov">
+						<span class="glyphicon glyphicon-map-marker"></span>
+						<span class="address_txt txt">送货地址：西安</span>
+					</div>
+					<div class="notice fd hov">
+						<span class="glyphicon glyphicon-volume-down"></span>
+						<span class="notice_txt txt">公告公告</span>
+					</div>
+				</div>
+				<div class="top-right">
+					<div class="period fd">
+						<span class="data">下午好，请</span>
+						<a href="login.html" class="login">登录</a>
+					</div>
+					<a href="register.html" class="resitered fd huise hov">注册</a>
+					<div class="member fd hov">
+						<span class="glyphicon glyphicon-usd"></span> 会员俱乐部
+					</div>
+					<div class="order fd hov">
+						<span class="glyphicon glyphicon-list-alt"></span> 我的订单
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header ">
+			<div class="container">
+				<div class=" box">
+					<div class="logo">
+						<img src="img/logo3.png" />
+					</div>
+					<div class="search border">
+						<div class="search_top">
+							<input type="text" value="" placeholder="儿童相机" />
+							<span class="glyphicon glyphicon-search"></span>
+						</div>
+						<div class="search_bottom">
+							<ol>
+								<li>
+									<a href="xiangqing.html?name=配饰">耳钉</a>
+								</li>
+								<li>
+									<a href="xiangqing.html?name=数码">相机</a>
+								</li>
+								<li>
+									<a href="xiangqing.html?name=内衣">文胸</a>
+								</li>
+								<li>
+									<a href="xiangqing.html?name=电器">电风扇</a>
+								</li>
+								<li>
+									<a href="xiangqing.html?name=家纺">化纤被</a>
+								</li>
+								<li>
+									<a href="xiangqing.html?name=男装">T恤</a>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="car border">
+						<span class="glyphicon glyphicon-shopping-cart"></span> 购物车
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bar">
+			<div class="container">
+				<ul>
+					<li><a href="index1.html">首页</a></li>
+					<li><a href="xiangqing.html?name=男装">男装</a></li>
+					<li><a href="xiangqing.html?name=女装">女装</a></li>
+					<li><a href="xiangqing.html?name=居家">居家</a></li>
+					<li><a href="xiangqing.html?name=首饰">首饰</a></li>
+					<li><a href="xiangqing.html?name=美食">美食</a></li>
+					<li><a href="xiangqing.html?name=箱包">箱包</a></li>
+					<li><a href="xiangqing.html?name=鞋子">鞋子</a></li>
+					<li><a href="xiangqing.html?name=内衣">内衣</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container product">
+			<div class="row lis">
+				<!--<div class="item col-md-2 col-sm-4 col-xs-6">
+					<img src="img/cat.jpg"/>
+					<span>￥55.00</span>
+					<p>防盗门积极麻烦你的脚开始见覅偶任务界面</p>
+				</div>-->
+			</div>
+		</div>	
+		
+		<div class="container">
+			<div class="bottom row">
+				<ul class="col-lg-3">
+					<li>购物指南</li>
+					<li>免费注册</li>
+					<li>开通支付宝</li>
+					<li>支付宝充值</li>
+				</ul>
+				<ul class="col-lg-3">
+					<li>配送方式</li>
+					<li>上门自提</li>
+					<li>配送服务查询</li>
+					<li>配送费收取标准</li>
+					<li>海外配送</li>
+				</ul>
+				<ul class="col-lg-3">
+					<li>支付方式</li>
+					<li>货到付款</li>
+					<li>在线付款</li>
+					<li>分期付款</li>
+					<li>公司转账</li>
+				</ul>
+				<ul class="col-lg-3">
+					<li>售后服务</li>
+					<li>售后政策</li>
+					<li>价格保护</li>
+					<li>退款说明</li>
+					<li>返修/退换货 </li>
+					<li>取消订单</li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="container">
+				<div class="footer-infor">
+					<p class="footer-infor-link">
+						<a href="">关于我们</a>|
+						<a href="">About us</a>|
+						<a href="">Investor Relations</a>|
+						<a href="">媒体报道</a>|
+						<a href="">品牌招商</a>|
+						<a href="">隐私条款</a>|
+						<a href="">唯品诚聘</a>|
+						<a href="">唯品卡</a>|
+						<a href="">联系我们</a>
+					</p>
+					<p class="footer-infor-txt">
+						Copyright © 2008-2020 vip.com，All Rights Reserved 使用本网站即表示接受
+						<a href="">用户协议</a>版权协议。
+						<br>
+						<a href="">增值业务经营许可证： </a>
+						<a href="">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+						<a href="">经营主体证照</a>
+						<a href="">风险监测信息</a>
+						<a href="">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+						<br>
+						<a href="">网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+						<a rel="" href="">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var str= decodeURI (location.search.substr(1).split("=")[1]);
+			console.log(str)
+			/*$(function(){*/
+				if(str!=''||str!=null||str!==undefined){
+					$.ajax({
+						type:"get",
+						url:"http://127.0.0.1/w/website/findGoodsList",
+						async:false,
+						data:{
+							"platId":"d0a500ecf8ab41aa9ffe8e18ac6419e1",
+							"info":str,
+							"pageNo":1
+						},
+						success:function(res){
+							if(status==0){
+								var obj=res.data.tbk_dg_material_optional_response.result_list.map_data;
+								console.log(res)
+								for(var i=0;i<=obj.length;i++){
+									$(".lis").append(
+										`<div class="col-sm-3 col-xs-6">
+											<div class="item">
+												<a href="index.html?item_id=${obj[i].item_id}">
+													<img src="${obj[i].pict_url}"/>
+													<p>${obj[i].title}</p>
+													<span class="price">￥${obj[i].zk_final_price}</span>
+													<span class="del">￥${obj[i].reserve_price}</span>
+													
+												</a>
+											</div>
+											
+										</div>`
+									)
+								}
+							}						
+						}
+					});
+				}
+			/*})*/
+		</script>
+		<script src="js/communal.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

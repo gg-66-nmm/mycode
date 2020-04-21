@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<h2>4.年终奖</h2>
+		输入工作年份：<input type="text" id="year1"  /><br/>
+		输入月薪：<input type="text" id="money"  /><br/>
+		<button onclick="tt()">计算</button>
+		<div id="nzj"></div>
+		<!--4.-->
+		<script type="text/javascript">
+			
+			function tt(){
+				var n=document.getElementById("year1").value;
+				var money=document.getElementById("money").value;
+				var nzj;
+				if(n==0&&money<=8000){
+					nzj=money;
+				}
+				else if(n==0&&money>8000){
+					nzj=1.2*money;
+				}
+				else if(n==1&&money<=10000){
+					nzj=1.5*money;
+				}
+				else if(n==1&&money>10000){
+					nzj=1.7*money;
+				}
+				else if(n>=2&&money<=12000){
+					nzj=3*money;
+				}
+				else if(n>=2&&money>12000){
+					nzj=3.2*money;
+				}
+				
+				document.getElementById("nzj").innerHTML="年终奖为："+nzj;
+			}
+		</script>
+		<script type="text/javascript">
+			document.write("<h1>13.水果</h1>");
+			for(var a=0;a<=100;a++){
+				for(var b=0;b<=100;b++){
+					for(var c=0;c<=100;c++){
+						if(3*a+2*b+c==200&&a+b+c==100){
+							document.write("苹果"+a+"个，鸭梨"+b+"个，桃子"+c+"个<br/>");
+						}
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

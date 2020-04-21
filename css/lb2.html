@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			.lunbo{
+				width: 500px;
+				height: 270px;
+				margin: 20px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.pic{
+				/*width: calc(500px * 7);*/
+				width: 3500px;
+				animation: lllb 15s ease-out infinite;
+			}
+			.pic img{
+				width: 500px;
+				height: 270px;
+				float: left;
+			}
+			@keyframes lllb{
+				0%,10%{margin-left: 0;}
+				15%,25%{margin-left: -500px;}
+				30%,40%{margin-left: -1000px;}
+				45%,55%{margin-left: -1500px;}
+				60%,70%{margin-left: -2000px;}
+				75%,85%{margin-left: -2500px;}
+				90%,100%{margin-left: -3000px;}
+			}
+			.arrow{
+				position: absolute;
+				top: 80px;
+				width: 30px;
+				height: 50px;
+				background-color: rgba(0,0,0,0.3);
+				line-height: 50px;
+				font-size: 50px;
+				text-align: center;
+				z-index: 22;
+			}
+			#prev{
+				left: 5px;
+			}
+			#next{
+				right: 5px;
+			}
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="lunbo">
+			<div class="pic">
+				<img src="img/l1.jpg"/>
+				<img src="img/l2.jpg"/>
+				<img src="img/l3.jpg"/>
+				<img src="img/gf1.png"/>
+				<img src="img/gf2.jpg"/>
+				<img src="img/gf3.jpg"/>
+				<img src="img/gf4.jpg"/>
+			</div>
+			<a href="javascript:;" class="arrow" id="prev">&lt;</a>
+			<a href="javascript:;" class="arrow" id="next">&gt;</a>
+		</div>
+	</body>
+</html>

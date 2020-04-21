@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box"></div>
+		<button onclick="deleteH1()">移除h1</button>
+		<script type="text/javascript">
+			window.onload=function(){
+				var div,h1;
+				function init(){
+					div=document.getElementById('box');
+					h1=document.createElement('h1');
+					h1.innerHTML="创建子节点";
+					div.appendChild(h1);
+					h1.onclick=function(){
+						alert("我是h1，我被点击了！");
+					}
+				}
+				init();
+				window.deleteH1=function(){
+					if(h1){
+						div.removeChild(h1);
+						h1=null;
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

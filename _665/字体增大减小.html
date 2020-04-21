@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>字体增大减小</title>
+		<style type="text/css">
+			p{
+				height: 50px;
+				font-size: 20px;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn_raduce" value="字体减小" />
+		<input type="button" id="btn_increase" value="字体增大" />
+		<input type="text" id="inpt" value="" placeholder="请输入你想要显示的内容" />
+		<input type="button" id="btn" value="显示" />
+		<p id="pp"></p>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oInput=document.getElementById("inpt");
+				var oP=document.getElementById('pp');
+				var btn=document.getElementById("btn");
+				var btnRaduce=document.getElementById('btn_raduce');
+				var btnIncrease=document.getElementById('btn_increase');
+				var size=20;
+				btnRaduce.onclick=function(){
+					size--;
+					oP.style.fontSize=size+"px";
+				}
+				btnIncrease.onclick=function(){
+					size++;
+					oP.style.fontSize=size+"px";
+				}
+				/*oP.innerHTML="1121545";
+				console.log(oP.value);*/
+				btn.onclick=function(){
+					//oP.innerHTML="跟我走吧,天亮就出发";
+					oP.innerHTML=oInput.value;
+					/*console.log(oInput.value)
+					oP.style.fontSize="10px";*/
+				}
+				
+			}
+		</script>
+	</body>
+</html>

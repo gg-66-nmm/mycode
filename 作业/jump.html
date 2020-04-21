@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 500px;
+				height: 200px;
+				background-color: #000;
+				margin: auto;
+				
+			}
+			.box ul{
+				height: 200px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.box ul li{
+				width: 20px;
+				height: 20px;
+				margin: 5px;
+				list-style: none;
+				animation: jump 1s infinite linear;
+			}
+			.box ul li:nth-child(2n){
+				background-color: #ffff00;
+			}
+			.box ul li:nth-child(2n+1){
+				background-color: #00ffff;
+			}
+			.box ul li:nth-child(2){
+				animation-delay: 0.1s;
+			}
+			.box ul li:nth-child(3){
+				animation-delay: 0.2s;
+			}
+			.box ul li:nth-child(4){
+				animation-delay: 0.3s;
+			}
+			.box ul li:nth-child(5){
+				animation-delay: 0.4s;
+			}
+			.box ul li:nth-child(6){
+				animation-delay: 0.5s;
+			}
+			.box ul li:nth-child(7){
+				animation-delay: 0.6s;
+			}
+			.box ul li:nth-child(8){
+				animation-delay: 0.7s;
+			}
+			.box ul li:nth-child(9){
+				animation-delay: 0.8s;
+			}
+			.box ul li:nth-child(10){
+				animation-delay: 0.9s;
+			}
+			.box ul li:nth-child(11){
+				animation-delay: 1s;
+			}
+			.box ul li:nth-child(12){
+				animation-delay: 1.1s;
+			}
+			@keyframes jump{
+				0%{
+					transform: translateY(0px);
+				}
+				50%{
+					transform: translateY(80px);
+					border-radius: 50%;
+				}
+				100%{
+					transform: translateY(0px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li class="list1"></li>
+				<li class="list2"></li>
+				<li class="list3"></li>
+				<li class="list4"></li>
+				<li class="list5"></li>
+				<li class="list6"></li>
+				<li class="list7"></li>
+				<li class="list8"></li>
+				<li class="list9"></li>
+				<li class="list10"></li>
+				<li class="list11"></li>
+				<li class="list12"></li>
+			</ul>
+		</div>
+	</body>
+</html>

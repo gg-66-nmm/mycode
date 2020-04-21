@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+/*			var arr=[];
+			arr.push(function(){
+				alert("hello");
+			})
+			arr.push(function(){
+				alert("How are you!");
+			})
+			arr.push(function(){
+				alert("How do you do？");
+			})
+			arr.push(function(a,b){
+				alert(a+b)
+			})
+			arr[2]();
+			arr[3](1,4);*/
+			/*var arr=[];
+			for(var i=0;i<10;i++){
+				arr[i]=function(){
+					alert(i);
+				}
+			}
+			arr[6]();
+			arr[8]();
+			arr[2]();*/
+			//方法一：let
+			/*var arr=[];
+			for(let i=0;i<10;i++){
+				arr[i]=function(){
+					alert(i);
+				}
+			}
+			arr[6]();
+			arr[8]();
+			arr[2]();*/
+			//方法二：即时调用函数
+			var arr=[];
+			for(var i=0;i<10;i++){
+				(function(m){
+					arr[m]=function(){
+						alert(m);
+					}
+				})(i);
+				
+			}
+			arr[6]();
+			arr[8]();
+			arr[2]();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding:0;
+				margin: 0;
+			}
+			.box{
+				width: 601px;
+				height: 480px;
+				border: 1px solid #000;
+				overflow: hidden;
+				margin: 20px auto;
+				position: relative;
+			}
+			.box ul{
+				list-style: none;
+				width: 601px;
+				height: 120px;
+				position: absolute;
+				left: 0;
+			}
+			.box ul:nth-child(0){
+				top: 0px;
+			}
+			.box ul:nth-child(1){
+				top: -125px;
+			}
+			.box ul:nth-child(2){
+				top: -250px;
+			}
+			.box ul:nth-child(3){
+				top: -375px;
+			}
+			.box ul li{
+				padding: 1px 0px 0px 1px;
+				float: left;
+			}
+			img{
+				width: 199px;
+				height: 120px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>
+				<li><img src="img/1.jpg"/></li>
+				<li><img src="img/2.jpg"/></li>
+				<li><img src="img/3.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/4.jpg"/></li>
+				<li><img src="img/5.jpg"/></li>
+				<li><img src="img/6.jpg"/></li>
+			</ul>
+			<ul>
+				<li><img src="img/7.jpg"/></li>
+				<li><img src="img/8.jpg"/></li>
+				<li><img src="img/9.jpg"/></li>
+			</ul>
+			<ul class="scr">
+				<li><img src="img/10.jpg"/></li>
+				<li><img src="img/11.jpg"/></li>
+				<li><img src="img/12.jpg"/></li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			//var oTop=0;
+			function scroll(){
+				//oTop-=125;
+				$(".box ul").animate({"top":-125})
+				if(oTop<-250){
+					oTop=125;
+				}
+				
+			}
+			setInterval(scroll,1500);
+			/*function slide(){
+				$(".scr").delay(1000).slideUp();
+			}
+			setTimeout(slide,1000);*/
+		</script>
+	</body>
+</html>

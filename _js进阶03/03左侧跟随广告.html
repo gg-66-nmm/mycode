@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height: 50000px;
+			}
+			div{
+				width: 100px;
+				height: 500px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: aqua;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<script type="text/javascript" src="js/animate-2.0.2.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			var box=document.getElementById("box");
+			var A=box.offsetHeight;
+			move();
+			window.onscroll=move;
+			window.onresize=move;
+			function move(){
+				var B=document.documentElement.clientHeight;
+				var C=document.body.scrollTop||document.documentElement.scrollTop;
+				var target=C+(B-A)/2;
+				animate(box,{"top":target},10);
+			}
+		</script>
+	</body>
+</html>

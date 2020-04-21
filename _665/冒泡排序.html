@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>冒泡排序</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr=[21,55,2,12,23,10,3,26];
+			/*arr.sort(function(a,b){
+				if(a>b){
+					return 1;
+				}else if(a<b){
+					return -1;
+				}else{
+					return 0;
+				}			
+			})
+			console.log(arr);*/
+			//逆：剩余里面挑最大（放到后面）
+			for(var i=0;i<arr.length-1;i++){
+				for(var j=0;j<arr.length-i;j++){
+					if(arr[j]<arr[j-1]){
+						var temp=arr[j-1];
+						arr[j-1]=arr[j];
+						arr[j]=temp;
+					}
+					//console.log(arr)
+				}
+				console.log("第"+(i+1)+"次排序的结果为："+arr)
+			}
+			//顺：剩余里面挑最小（放到前面）
+			/*for(var i=0;i<arr.length-1;i++){
+				for(var j=arr.length-1;j>i;j--){
+					if(arr[j]<arr[j-1]){
+						var temp=arr[j-1];
+						arr[j-1]=arr[j];
+						arr[j]=temp;
+					}
+					//console.log(arr)
+				}
+				console.log("第"+(i+1)+"次排序的结果为："+arr)
+			}*/
+			console.log(arr);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#box{
+				width: 1000px;
+				height: 600px;
+				position: relative;
+				border: 5px solid brown;
+				margin: 15px auto;
+			}
+			.block{
+				width: 200px;
+				height: 10px;
+				position: absolute;
+				top: 500px;
+				left: 425px;
+				background-color: goldenrod;
+			}
+			p{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background-color: coral;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			ul{
+				width: 1000px;
+				list-style: none;
+			}
+			ul li{
+				width: 49px;
+				height: 29px;
+				margin-left: 1px;
+				margin-top: 1px;
+				background-color: yellowgreen;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul>
+				
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var box=document.getElementById("box");
+			/*var ul=document.getElementsByTagName("ul")[0];
+			function Brick(left,top){
+				this.left=left;
+				this.top=top;
+				this.width=49;
+				this.height=29;
+				this.init();
+			}
+			Brick.prototype.init=function(){
+				for(var i=1;i<=3;i++){
+					for(var j=1;j<=20;j++){
+						this.dom=document.createElement("li");
+						ul.appendChild(this.dom);
+						//console.log(this.dom[j].index())
+						this.dom[j].style.left=this.left+this.width*j+"px";
+						//this.dom.style.left+=this.left*j+"px";
+						console.log(ul.childNodes[j].style.left)
+					}
+					this.dom[i].index.style.top=this.top+this.height*i+"px";
+				}
+			}
+			var brick=new Brick();*/
+			function Block(top,left){
+				this.left=left;
+				this.top=top;
+				this.width=200;
+				this.init();
+				this.move();
+			}
+			Block.prototype.init=function(){
+				this.dom=document.createElement("div");
+				box.appendChild(this.dom);
+				this.dom.className="block";
+				//this.dom.id="block";
+			}
+			Block.prototype.rander=function(){
+				this.dom.style.left=this.left+"px";
+				this.dom.style.top=this.top+"px";
+			}
+			//block左右移
+			Block.prototype.move=function(){
+				var self=this;
+				//console.log(self.left)
+				document.onkeydown=function(event){				
+					event=event||window.event;
+					if(event.keyCode==37){
+						if(self.left<=0){
+							self.left=0;
+						}else{
+							self.left-=20;
+						}					
+						//console.log("左")
+					}else if(event.keyCode==39){
+						if(self.left>=800){
+							self.left=800;
+						}else{
+							self.left+=20;
+						}	
+						
+						//console.log(self.left)
+					}
+					//Block.rander();
+					//block.style.left=block.left+"px";
+					self.rander();
+				}
+				
+			}
+			
+			
+			function Ball(left,top){
+				this.ball=30;
+				this.top=top || Math.random()*(box.clientHeight-this.ball);
+				this.left=left || Math.random()*(box.clientWidth-this.ball);				
+				this.deltaX=parseInt(Math.random()*2)-2;
+				this.deltaY=parseInt(Math.random()*2)-2;
+				this.init();
+				this.move();
+			}
+			Ball.prototype.init=function(){
+				this.dom=document.createElement("p");
+				box.appendChild(this.dom);
+			}
+			Ball.prototype.render=function(){
+				this.dom.style.top=this.top+"px";
+				this.dom.style.left=this.left+"px";
+			}
+			Ball.prototype.move=function(){
+				var self=this;
+				var timer=setInterval(function(){
+					self.left+=self.deltaX;
+					self.top+=self.deltaY;
+					if(
+						(self.top<=0)||
+						(self.top>=box.clientHeight-self.ball)
+					)
+					{
+						self.deltaY=-self.deltaY;
+						
+					}
+					if(
+						(self.left<=0)||
+						(self.left>=box.clientWidth-self.ball)
+					){
+						self.deltaX=-self.deltaX;
+					}
+					if(self.top+self.ball/2>=block.top){
+						if(self.left+self.ball/2>=block.dom.offsetLeft
+							&&self.left+self.ball/2<=block.dom.offsetLeft+block.width){
+								self.deltaY=-self.deltaY;
+							}else{
+								clearInterval(timer);
+								alert("GAME OVER");
+							}
+					}
+					self.render();
+					//console.log(block.dom.offsetLeft)
+				},5)
+			}
+			
+			var ball=new Ball();
+			var block=new Block(500,425);
+		</script>
+	</body>
+</html>

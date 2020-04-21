@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			input{
+				width: 220px;
+				height: 30px;
+				border-radius: 3px;
+				background-color: lightgoldenrodyellow;
+				font-size: 14px;
+				margin-top: 15px;
+				outline: none;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<form action="#" >
+			<table>
+				<tr>
+					<td>
+						<label for="">用户名：</label>			
+					</td>
+					<td>
+						<input type="text" name="userName" id="userName" placeholder="输入4-8个字符" onblur="test1()"/>
+						<label for="" id="userNameTest">*</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="">邮箱：</label>						
+					</td>
+					<td>
+						<input type="email" name="email" id="email" placeholder="输入你的邮箱"  onblur="test2()"/>
+						<label for="" id="userMail">*</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="">联系电话：</label></td>
+					<td>
+						<input type="tel" name="tel" id="tel"  placeholder="输入你的联系电话"  onblur="test3()"/>	
+						<label for="" id="userTel">*</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="">密码：</label></td>
+					<td>
+						<input type="password" name="password" id="psw" placeholder="输入6-16位数字或字母" onblur="test4()" />
+						<label for="" id="userPsw">*</label>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="">确认密码：</label></td>
+					<td>
+						<input type="password" name="pswTwo" id="pswTwo" placeholder="再次输入密码"  onblur="test5()"/>
+						<label for="" id="userPswTwo">*</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="button" id="submit" value="提交" />
+					</td>
+				</tr>
+			</table>
+			<script type="text/javascript">
+				/*var $=document.getElementById();*/
+				var userName=document.getElementById("userName");
+				var userEmail=document.getElementById("email");
+				var userTel=document.getElementById("tel");
+				var userPsw=document.getElementById("psw");
+				var userPswTwo=document.getElementById("pswTwo");
+				var mail=/^[0-9a-zA-Z-._]+[@][0-9a-zA-Z-._]+|([.][a-zA-z]+){1,2}/;
+				var tell=/^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|17[3|6|7]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+				var psw=/^[a-zA-Z]\w{5,15}$/;
+				var btn=document.getElementById("submit");
+				/*var name=*/
+				/*window.onload(){*/
+					
+					function test1(){
+						//alert(userName.value);
+//						console.log(userName);
+						if(userName.value.length<4||userName.value.length>8){
+							document.getElementById("userNameTest").innerHTML="*长度不能小于4或不能大于8";
+							document.getElementById("userNameTest"). style.color='#ff0000' ;
+						}else{
+							document.getElementById("userNameTest").innerHTML="*";
+						}
+					}
+					function test2(){
+						if(mail.test(userEmail.value)){
+							document.getElementById('userMail').innerHTML="*";
+						}
+						else{
+							document.getElementById('userMail').innerHTML="*请输入正确的邮箱";
+							document.getElementById('userMail').style.color="#ff0000";
+						}
+					}
+					function test3(){
+						if(tell.test(userTel.value)){
+							document.getElementById('userTel').innerHTML="*";
+						}
+						else{
+							document.getElementById('userTel').innerHTML="*请输入正确的手机号码";
+							document.getElementById('userTel').style.color="#ff0000";
+						}
+					}
+					function test4(){
+						if(psw.test(userPsw.value)){
+							document.getElementById('userPsw').innerHTML="*";
+						}
+						else{
+							document.getElementById('userPsw').innerHTML="*请输入以字母开头的6-16位数字或字母";
+							document.getElementById('userPsw').style.color="#ff0000";
+						}
+					}
+					function test5(){
+						if(userPsw.value==userPswTwo.value){
+							document.getElementById('userPswTwo').innerHTML="*";
+						}
+						else{
+							document.getElementById('userPswTwo').innerHTML="*两次输入的密码不一致";
+							document.getElementById('userPswTwo').style.color="#ff0000";
+						}
+					}
+					btn.addEventListener("click",test1);
+					btn.addEventListener("click",test2);
+					btn.addEventListener("click",test3);
+					btn.addEventListener("click",test4);
+					btn.addEventListener("click",test5);
+					
+				/*}*/
+			</script>
+		</form>
+	</body>
+</html>

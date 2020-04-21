@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*1!+2!+3!+...+10!*/
+			function jiecheng(a){
+				var s=1;
+				for(var i=1;i<=a;i++){
+					s*=i;
+				}
+				return s;
+			}
+			function he(b){
+				var he=0;
+				for(var i=1;i<=b;i++){
+					he+=jiecheng(i);
+				}
+				console.log(he);
+			}
+			he(10);
+				
+			var sum=0;
+				for(var i=1;i<=10;i++){
+					var s=1;
+					for(var j=1;j<=i;j++){
+						s*=j;
+					}
+					//console.log(s);
+					sum+=s;
+					//console.log(s,sum);
+				}
+				//console.log(sum);
+			for(var k=100;k<1000;k++){
+				var gw=parseInt(k%10);
+				var sw=parseInt(k/10%10);
+				var bw=parseInt(k/100);
+				var jch=jiecheng(gw)+jiecheng(sw)+jiecheng(bw);
+				if(k==jch){
+					console.log(k);
+				}
+			}
+			//var num=parseInt(prompt("输入一个整数"));
+			function rev(num){
+				var temp=0;
+				while(true){
+					n=num%10;
+					num=parseInt(num/10);
+					/*if(n==0){
+						temp=0+''+temp;
+					}else{
+						temp=temp*10+n;	
+					}*/
+						temp=temp*10+n;			
+					if(num<1){
+						break;
+					}					
+				}
+				console.log(temp);				
+			}
+			rev(parseInt(prompt("输入一个整数")));
+			function yueshu(abc){
+				var he=0;
+				for(var i=1;i<=abc/2;i++){
+					if(abc%i==0){
+						he+=i;
+					}
+				}
+				return he;
+			}
+			for(var i=1;i<3000;i++){
+				var dd=yueshu(i);
+				if(yueshu(dd)==i&&i>dd&&i==yueshu(dd)){
+					console.log(i+"和"+dd+"是亲密数");
+				}
+			}
+			var a=parseInt(100*Math.random());
+			console.log(a);
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			.bigBox{
+				width: 500px;
+				height: 335px;
+				border: 1px solid #000;
+				margin: 100px auto;
+			}
+			.imageList{
+				height: 300px;
+				position: relative;
+				overflow: hidden;
+			}
+			.imageList ul{
+				position: absolute;
+			}
+			.imageList ul li img{
+				width: 500px;
+				height: 300px;
+			}
+			.smallImage ul{
+				overflow: hidden;
+			}
+			.smallImage ul li{
+				border: 2px solid #CCC;
+				float: left;
+			}
+			.smallImage ul li img{
+				width: 46px;
+				height: 28px;
+				
+				/*border: 2px solid #CCC;*/
+			}
+			.smallImage ul li.change{
+				border-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bigBox">
+			<div class="imageList">
+				<ul>
+					<li><a href="#"><img src="img/1.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/2.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/3.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/4.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/5.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/6.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/7.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/8.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/9.jpg" alt="" /></a></li>
+					<li><a href="#"><img src="img/10.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			<div class="smallImage">
+				<ul>
+					<li class="change"><a href="javascript:;"><img src="img/1.jpg" alt=""  /></a></li>
+					<li><a href="javascript:;"><img src="img/2.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/3.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/4.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/5.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/6.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/7.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/8.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/9.jpg" alt="" /></a></li>
+					<li><a href="javascript:;"><img src="img/10.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			$(".imageList ul li:first").clone().appendTo($(".imageList ul"));
+			var $_un=$(".imageList ul");
+			var index=0;
+			var timer=setInterval(move,2000);
+			function move(){
+				index++;
+				$_un.animate({"top":-304*index},600,function(){
+					if(index>9){
+						index=0;
+						$_un.css("top",0);
+					}
+				})
+			}
+			$(".smallImage ul li").mouseenter(function(){
+				clearInterval(timer);
+			})
+			$(".smallImage ul li").mouseleave(function(){
+				timer=setInterval(move,2000);
+			})
+			$(".smallImage ul li").click(function(){
+				index=$(this).index();
+				$_un.stop(true).animate({"top":-304*index},600);
+				color();
+			})
+			function color(){
+				var n=index>9?0:index;
+				$(".smallImage ul li").eq(n).addClass("change").siblings().removeClass("change");
+			}
+		</script>
+	</body>
+</html>

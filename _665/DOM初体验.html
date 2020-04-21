@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM初体验</title>
+	</head>
+	<body>
+		<img src="img/1.jpg" id="img" title="玉米" style="width: 200px;height: 200px;"/>
+		<h1>哈哈哈哈哈哈哈</h1>
+		<h1>哈哈哈哈哈哈哈</h1>
+		<h1>哈哈哈哈哈哈哈</h1>
+		<h1>哈哈哈哈哈哈哈</h1>
+		<h1>哈哈哈哈哈哈哈</h1>
+		<h1>哈哈哈哈哈哈哈</h1>
+		<script type="text/javascript">
+			function bian(){
+				var img=document.getElementById('img');
+				img.src="img/list1.jpg";
+				img.title="夜景";
+				var word=document.getElementsByTagName('h1');
+				word[3].innerHTML="嘻嘻嘻嘻嘻嘻嘻";
+			}
+			setInterval(bian,5000);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height: 5000px;
+				color: white;
+				background-image: -webkit-linear-gradient(top,red,orange,yellow,green,pink);
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" name="btn" id="btn" value="妈妈咪呀" />
+		<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			$("#btn").click(function(){
+				$("body,html").animate({"scrollTop":4000},2000);
+			})
+		</script>		
+	</body>
+</html>

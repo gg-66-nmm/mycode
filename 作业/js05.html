@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*1.编写函数repeat(char,n) 实现重复char字符串n次比如repeat("★",6) 返回"★★★★★★"*/			function repeat(char,n){
+				var temp='';
+				for(var i=1;i<=n;i++){
+					temp+=char;
+				}
+				console.log(temp);
+			}
+			repeat("★",12);
+			/*2.在控制台输出图形
+			    *
+			   ***
+			  *****
+			 *******
+			*********
+			*/
+			function xingxing(a){
+				for(var i=1;i<=a;i++){
+					var temp='';
+					
+					for(var j=1;j<=2*i-1;j++){
+						temp+='*';
+						var space=' ';
+						for(var k=1;k<=a-i;k++){
+							space+=' ';
+						}
+					}
+					console.log(space+temp);
+				}
+			}
+			//xingxing(5);
+			/*3.编写函数rev(char) 实现将字符串char倒置  比如rev("spring") 返回"gnirps"*/
+			function rev(char){
+				var char1=char;
+				var char2=char1.split('').reverse().join('');
+				//var str=char2;
+				//console.log(str.toString());
+				console.log(char2);
+			}
+			rev('123');
+			
+			/*4.将字符串"i come from beijing"倒置，即控制台输出"beijing from come i"*/
+			var char=['i','come','form','beijing'];
+			console.log(char.reverse().join(' '));
+			
+			/*5.编写函数rightchange(char,n) 实现字符串char循环右移n位。
+			比如rightchange("abcdefg",2) 返回"fgabcde"
+			*/
+			function rightchange(char,n){
+				var char1=char.substr(0,char.length-n);
+				var char2=char.substr(char.length-n,n);
+				var char3=char2.concat(char1);
+				console.log(char3);
+			}
+			rightchange("abcdefghjgk",5);
+			
+			/*6.编写函数maxr(char) 返回字符串char中最长的连续重复字母
+			比如maxr("mmmiijjjjkkkkkkssptr") 返回"kkkkkk"
+			*/
+			/*function maxr(char){
+				var char1=char.;
+				console.log(char1);
+			}
+			maxr("mmmiijjjjkkkkkkssptr")*/
+			/*7.有10个学生的成绩存在数组中，请统计大于等于平均成绩的人数。
+			成绩直接以数组形式写在程序中，不需要用户输入。
+			*/
+			/*var svg=0;
+			var count=0;
+			var char=[10,20,30,40,50,60,70,80,90,100];
+			for(var i=0;i<char.length;i++){
+				svg+=char[i]/10;
+			}
+			console.log(svg);
+			for(var j=0;j<char.length;j++){
+				if(char[j]>=svg){
+					count++;
+				}
+			}
+			console.log( count);*/
+		</script>
+	</body>
+</html>

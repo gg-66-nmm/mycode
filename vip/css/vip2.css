@@ -1,0 +1,90 @@
+
+.tel input,.psw1 input,.uin input{
+	height: 30px;
+	margin-top: 2px;
+	font-size: 14px;
+	border: none;
+	text-indent: 0.5em;
+	float: left;
+	outline: none;
+}
+.tel,.psw1,.uin{
+	height: 35px;
+	margin-top: 20px;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-left: 20px;
+}
+button{
+	width: 110px;
+	height: 35px;
+	margin-top: 20px;
+	border-radius: 5px;
+	margin-left: 5px;
+	outline: none;
+	border:1px solid #fff ;
+}
+.psw1,.tel{
+	width: 280px;
+}
+.uin{
+	width: 160px;
+	float: left;
+}
+.psw1 input,.tel input{
+	width: 220px;
+}
+.uin input{
+	width: 130px;
+	
+}
+.ver{
+	overflow: hidden;
+}
+.terms{
+	width: 280px;
+	margin: 10px auto;
+	font-size: 12px;
+}
+#zhuce li{
+	color: #000;
+	font-weight: 500;
+}
+#zhuce li:nth-child(2){
+	font-size: 12px;
+	border: none;
+}
+li a{
+	color: #f10180;
+}
+.tel::before{
+	content: '';
+	background: url(../img/66.png) no-repeat -564px -159px;
+	display: inline-block;
+	width: 28px;
+	margin-top: 5px;
+	height: 30px;
+	float: left;
+}
+.uin::before{
+	content: '';
+	background: url(../img/66.png) no-repeat -589px -156px;
+	display: inline-block;
+	width: 28px;
+	margin-top: 5px;
+	height: 30px;
+	float: left;
+}
+.psw1::before{
+	content: '';
+	background: url(../img/66.png) no-repeat -540px -160px;
+	display: inline-block;
+	width: 28px;
+	margin-top: 5px;
+	height: 30px;
+	float: left;
+}
+#sub{
+	margin-bottom: 25px;
+}

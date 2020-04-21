@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.accordion{
+				width: 600px;
+				margin: 100px auto;
+				border: 1px solid #00FFFF;
+			}
+			ul{
+				list-style: none;
+			}
+			ul li h3{
+				line-height: 35px;
+				background-color: greenyellow;
+				padding: 0 10px;
+				color: #FFF;
+				border-bottom: 1px solid #CCCCCC;
+				position: relative;
+				cursor: pointer;
+			}
+			ul li.cur h3{
+				background-color: skyblue;
+			}
+			ul li .content{
+				display: none;
+				padding: 10px;
+				font-size: 16px;
+				line-height: 150%;
+			}
+			ul li.first .content{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="accordion">
+			<ul>
+				<li class="cur first">
+					<h3>星期一<i></i></h3>
+					<div class="content">
+						<p>
+							天上有云，林间有雾，我心有你！
+						</p>
+					</div>
+					
+				</li>
+				<li>
+					<h3>星期二<i></i></h3>
+					<div class="content">
+						<p>
+							月亮很亮，亮也没用，没用也亮；
+							我喜欢你，喜欢也没用，没用也喜欢！
+						</p>
+					</div>
+					
+				</li>
+				<li>
+					<h3>星期三<i></i></h3>
+					<div class="content">
+						<p>
+							如果我午夜梦回时感受到阳光扑面，一定因为我梦到你了！
+						</p>
+					</div>
+					
+				</li>
+				<li>
+					<h3>星期四<i></i></h3>
+					<div class="content">
+						<p>
+							在青山绿水之间，我想牵着你的手，走过这座桥，
+							桥上是绿叶红花，桥下是流水人家，桥的那头是青丝，桥的这头是白发！
+						</p>
+					</div>
+					
+				</li>
+				<li>
+					<h3>星期五<i></i></h3>
+					<div class="content">
+						<p>
+							你瞧，世界上有一千个我，这一千个我总还是抱着你！
+						</p>
+					</div>
+					
+				</li>
+				
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
+		<script type="text/javascript">
+			$(".accordion ul li h3").click(function(){
+				$(".content").slideUp();
+				if($(this).siblings(".content").is(":visible")){
+					$(this).siblings(".content").stop(true).slideUp();
+					$(this).parent().removeClass("cur");
+				}
+				else{
+					$(".cur").removeClass("cur");
+					$(this).parent().addClass("cur");
+					$(this).siblings(".content").stop(true).slideDown();
+				}
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+	float: left;
+}
+.tecent{
+	margin: 0 auto;
+	background-color: #d6dae2;
+}
+.top{
+	background-color: #fff;
+	width: 100%;
+}
+
+.top_list {
+	width: 1188px;
+	margin: auto;
+	overflow: hidden;
+	
+}
+
+.logo {
+	width: 310px;
+	height: 78px;
+	float: left;
+	background: url(../img/txl_logo.png) no-repeat top left;
+}
+
+.top_list ul {
+	width: 800px;
+	height: 78px;
+	float: left;
+	margin-left: 35px;
+	/*margin: 20px auto;*/
+}
+
+.top_list ul li {
+	height: 78px;
+	cursor: pointer;
+	background-image: url(../img/tx2.png);
+	background-repeat: no-repeat;
+}
+
+.top_list ul li:nth-child(1) {
+	width: 100px;
+	background-image: url(../img/tx1.png);
+}
+
+.top_list ul li:nth-child(2) {
+	width: 124px;
+	background-position-x: -100px;
+}
+
+.top_list ul li:nth-child(3) {
+	width: 146px;
+	background-position-x: -223px;
+}
+
+.top_list ul li:nth-child(4) {
+	width: 124px;
+	background-position-x: -490px;
+}
+
+.top_list ul li:nth-child(5) {
+	width: 122px;
+	background-position-x: -490px;
+}
+
+.top_list ul li:hover {
+	background-image: url(../img/tx1.png);
+}
+.content_top{
+	background: url(../images/top.jpg) center top no-repeat;
+	height: 269px;
+}
+.content_main{
+	background: url(../images/content.jpg) no-repeat top center;
+	height: 581px;
+}
+.icon{
+	background: url(../images/head.png) no-repeat;
+	width: 50px;
+	height: 55px;
+	position:absolute;
+	left: 30%;
+}
+h1{
+	float: left;
+	position: absolute;
+	top: 10px;
+	left: 45%;
+	font-weight: 400;
+	/*color: #177AFF;*/
+	/*display: inline-block;*/
+	background-image: -webkit-linear-gradient(0deg,rgba(29,161,255,1),rgba(154,257,254,1));
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+}
+.content_main ol{
+	width: 1185px;
+	height: 450px;
+	margin: auto;
+}
+.content_main ol li{
+	width: 275px;
+	height: 257px;
+	text-align: center;
+	position:relative;
+	margin-right:21px ;
+}
+.icon_list1{
+	left: 25%;
+}
+
+.icon_list2{
+	left: 42%;
+	top: 8%;
+	background-position:-65px -3px;
+}
+
+.icon_list3{
+	left: 43%;
+	top: 8%;
+	background-position:-126px -3px;
+}
+
+.icon_list4{
+	left: 40%;
+	top: 8%;
+	background-position:-185px -3px;
+}
+
+.icon_list5{
+	left: 42%;
+	top: 10%;
+	background-position:-7px -67px;
+}
+
+.icon_list6{
+	left: 42%;
+	top:12%;
+	background-position:-63px -67px;
+}
+
+.icon_list7{
+	left: 43%;
+	top: 12%;
+	background-position:-126px -67px;
+}
+.icon_list8{
+	left: 42%;
+	top: 12%;
+	background-position:-189px -67px;
+}
+.text{
+	width: 270px;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 5%;
+	text-align: center;
+}
+h2{
+	font-weight: 100;
+	
+	font-size: 23px;
+}
+.title span:nth-child(1){
+	margin-left: 30px;
+}
+.first_time{
+	width: 100%;
+	position: absolute;
+	top: 75px;
+}
+.first_des{
+	width: 100%;
+	position: absolute;
+	top: 110px;
+}
+.time{
+	width: 100%;
+	position: absolute;
+	top: 55px;
+}
+.des{
+	/*width: 260px;*/
+	position: absolute;
+	top: 100px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+.content_btn{
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top:67px;
+	left: 7px;
+	background: url(../images/btns.png) no-repeat 1px 1px;
+}
+.content_btn:hover{
+	background-position:-70px 1px;
+}
+.feet{
+	width: 100%;
+	background-color: #f6f6f6;
+}
+.foot{
+	width: 1026px;
+	margin: auto;
+	position: relative;
+}
+.foot_left{
+	width: 782px;
+	overflow: hidden;
+	position: relative;
+}
+.foot_left ul{
+	overflow: hidden;
+}
+.foot_left ul li{
+	width: 120px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+}
+.foot img{
+	width: 80px;
+	height: 30px;
+}
+.foot_left ol{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+	color: #a2a2a2;
+	font-size: 12px;
+	display: block;
+	padding: 10px 15px;
+}
+a:hover{
+	color: #ccc;
+}
+.foot h5{
+	font-weight: 100;
+	margin: 10px ;
+}
+.foot_right{
+	position: absolute;
+	top: 0;
+	left: 78%;
+}
+.foot2{
+	background-color: #a2a2a2;
+	text-align: center;
+	padding: 20px;
+}
+.foot2 p{
+	padding: 15px;
+}
+.foot li,.content_btn,.logo{
+	cursor: pointer;
+}

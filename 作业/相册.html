@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.picture{
+				width: 200px;
+				height: 120px;
+				margin: 200px auto;
+				perspective: 500px;
+				/*transform-origin: 100%,100%;*/
+			}
+			.pic{
+				position: relative;
+				transition: all 2s;
+				transform: rotateX(0deg);
+				transform: rotateY(0deg);
+				transform-style: preserve-3d;
+				animation:picture 10s infinite linear;
+				
+			}
+			.li,.ri{
+				position: absolute;
+			}
+			/*.pic img{
+    			-webkit-box-reflect:below 3px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.5));
+			}*/
+			.li img{
+				width: 200px;
+				height: 120px;		
+			}
+			.ri img{
+				width: 120px;
+				height: 120px;			
+			}
+			/*上*/
+			.list1{
+				transform: rotateX(90deg) translateZ(60px);
+			}
+			/*下*/
+			.list2{
+				transform:translateY(60px) rotateX(-90deg) translateZ(-6px);
+			}
+			/*右*/
+			.list3{
+				transform: rotateY(90deg) translateZ(140px);
+			}
+			/*后*/
+			.list4{
+				transform:translateZ(-60px) ;
+				}
+			/*前*/
+			.list5{
+				transform: translateZ(60px);
+			}
+			/*左*/
+			.list6{
+				transform: rotateY(-90deg) translateZ(60px);
+			}
+			@keyframes picture{
+				0%{
+					transform: rotateX(0deg) rotateY(0deg);
+				}
+				15%{
+					transform: rotateX(90deg) rotateY(90deg);
+				}
+				30%{
+					transform: rotateX(180deg) rotateY(180deg);
+				}
+				45%{
+					transform: rotateX(270deg) rotateY(270deg);
+				}
+				60%{
+					transform: rotateX(180deg) rotateY(0deg);
+				}
+				75%{
+					transform: rotateX(0deg) rotateY(270deg);
+				}
+				90%{
+					transform: rotateX(270deg) rotateY(0deg);
+				}
+			}
+			/*.picture:hover .pic{
+				transform: rotateX(-180deg) ;
+				//transform: rotateX(90deg);
+				
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="picture">
+			<div class="pic">
+				<div class="list1 li"><img src="img/l1.jpg""/></div>
+				<div class="list2 li"><img src="img/l2.jpg" /></div>
+				<div class="list3 ri"><img src="img/list1.jpg" /></div>
+				<div class="list4 li"><img src="img/l6.jpg" /></div>
+				<div class="list5 li"><img src="img/l5.jpg" /></div>
+				<div class="list6 ri"><img src="img/login_bg1.jpg"/></div>
+			</div>
+			
+		</div>
+	</body>
+</html>
