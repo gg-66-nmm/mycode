@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=scr, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function fun(name) {
+            name = name || "牛蛙肉"
+            console.log(name)
+        }
+        fun();
+        fun("秦岭山水");
+
+        function fun1(name = "二狗子") {
+            console.log(name)
+        }
+        fun1();
+        fun1("三狗子");
+
+        function fun2(a, ...reset) {
+            console.log(a);
+            console.log(reset);
+        }
+        fun2(121)
+        fun2(12, 15, 54);
+        fun2(12, 2, 21, 25, 15, 57, 48, 98);
+        var arr = [12, 25, 22, 34];
+
+        function fun3(a, b, c) {
+            console.log(a, b, c);
+        }
+        fun3(arr[0], arr[1], arr[2]);
+        fun3.apply(null, arr);
+        fun3.call(null, arr[1], arr[2], arr[3]);
+        fun3(...arr);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class People {
+            constructor(name) {
+                this.name = name;
+            }
+            showName() {
+                console.log("我的名字是" + this.name);
+            }
+        }
+        class Programmer extends People {
+            constructor(name, age) {
+                super(name);
+                this.age = age;
+            }
+            showAge() {
+                console.log("我的名字是" + this.name + "我今年" + this.age + "岁了")
+            }
+        }
+        var people = new People("李二狗")
+        var programme = new Programmer("王老六", 18)
+        people.showName();
+        // programme.showName();
+        programme.showAge();
+    </script>
+</body>
+
+</html>
