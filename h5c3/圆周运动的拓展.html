@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				top: 200px;
+				left: 200px;
+				background-color: red;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<script type="text/javascript">
+			var oDiv=document.querySelectorAll("div");
+			for(var i=0;i<4;i++){
+				cricleMove({
+					"obj":oDiv[i],
+					"yuanxin":[200,200],
+					"r":150,
+					"degree":90*i,
+					"looptime":4000
+				})
+			}
+			
+			function cricleMove(argsJSON){
+				var o=argsJSON.obj;
+				var a=argsJSON.yuanxin[0];
+				var b=argsJSON.yuanxin[1];
+				var r=argsJSON.r;
+				var degree=argsJSON.degree||0;
+				var direction=argsJSON.direction||1;
+				var interval=40;
+				var looptime=argsJSON.looptime;
+				var loopFrame=looptime/interval;
+				var degreeDelta=360/loopFrame;
+				setInterval(function(){
+					degree+=degreeDelta*direction;
+					if(degree>=360){
+						degree=0;
+					}
+					go(degree);
+				},interval);
+				function go(degree){
+					o.style.left=a+r*Math.sin(degreeToRad(degree))+"px";
+					o.style.top=b-r*Math.cos(degreeToRad(degree))+"px";
+				}
+				
+				//角度转换为弧度 pi/180,
+				function degreeToRad(degree){
+					return degree*Math.PI/180;
+				}
+			}
+		</script>
+	</body>
+	
+</html>

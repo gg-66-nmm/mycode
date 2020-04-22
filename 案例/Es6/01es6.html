@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style>
+        li {
+            list-style: none;
+            width: 400px;
+            height: 100px;
+            background-color: green;
+        }
+        
+        li p {
+            width: 300px;
+            height: 30px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul></ul>
+    <script>
+        var obj = {
+            name: "张三",
+            age: 18
+        }
+        var str = `<li>
+            <p>${obj.name}</p>
+            <p>${obj.age}</p>
+            </li>`
+        document.querySelector("ul").innerHTML = str;
+    </script>
+</body>
+
+</html>

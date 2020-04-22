@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4];
+        // arr.forEach(function(k) {
+        //     console.log(k);
+        // })
+        // arr.forEach(k => console.log(k));
+        var obj = {
+            birth: 1996,
+            getAge: function() {
+                var self = this;
+                /* var fn = function() {
+                         return new Date().getFullYear() - self.birth;
+                     }*/
+                var fn = () => new Date().getFullYear() - self.birth;
+                return fn();
+            }
+        }
+        console.log(obj.getAge())
+    </script>
+</body>
+
+</html>
